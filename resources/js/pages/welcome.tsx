@@ -79,10 +79,10 @@ export default function Welcome() {
 
     const navItems = [
         { href: '#beranda', label: 'Beranda' },
-        { href: '#tentang', label: 'Tentang' },
         { href: '#layanan', label: 'Layanan' },
-        { href: '#harga', label: 'Harga' },
         { href: '#portofolio', label: 'Portofolio' },
+        { href: '#tentang', label: 'Tentang' },
+        { href: '#ketentuan', label: 'Ketentuan' },
         { href: '#faq', label: 'FAQ' },
         { href: '#kontak', label: 'Kontak' },
     ];
@@ -375,17 +375,421 @@ export default function Welcome() {
                                 <span aria-hidden="true">&rarr;</span>
                             </a>
                             <a
-                                href="#portofolio"
+                                href="#layanan"
                                 className="inline-flex items-center gap-2 rounded-lg border border-[#D6D0C4] bg-white px-5 py-3 text-sm font-medium text-[#181B1F] transition-colors hover:bg-[#F2EFE8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#2C313B] dark:bg-[#171A20] dark:text-[#F5F2EB] dark:hover:bg-[#20242D]"
                             >
-                                <span>Lihat contoh proyek</span>
+                                <span>Lihat pilihan layanan</span>
                                 <span aria-hidden="true">&darr;</span>
                             </a>
                         </div>
                     </div>
                 </section>
 
-                {/* 2. TENTANG (Profil Profesional) */}
+                {/* 2. LAYANAN (Pilihan Paket & Estimasi Mulai) */}
+                <section
+                    id="layanan"
+                    className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
+                >
+                    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                        <div data-reveal className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#EFECE5] dark:border-[#1E2229]">
+                            <div className="max-w-xl">
+                                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                    Layanan Kami
+                                </h2>
+                                <p className="mt-2 text-base sm:text-lg font-medium text-[#2563EB] dark:text-[#60A5FA]">
+                                    Pilihan website sesuai kebutuhan usaha
+                                </p>
+                            </div>
+                            <p className="text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] max-w-md">
+                                Struktur penawaran transparan yang dirancang mendorong konversi penjualan, memperjelas ruang lingkup, dan membangun kepercayaan pelanggan.
+                            </p>
+                        </div>
+
+                        {/* Services Cards (MUI BasicCard Architecture: Card, CardContent, CardActions) */}
+                        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+                            {/* Card 1: Landing Page */}
+                            <div
+                                data-reveal
+                                data-reveal-delay="0"
+                                className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
+                            >
+                                <div className="p-6 sm:p-7">
+                                    <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                        Untuk Penjualan &amp; Promosi
+                                    </span>
+                                    <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Landing Page
+                                    </h3>
+                                    <div className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                        Mulai dari{' '}
+                                        <span className="text-xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Rp500.000
+                                        </span>
+                                    </div>
+                                    <p className="mt-3 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                        Website satu halaman yang dirancang untuk memperkenalkan produk atau jasa dan mengarahkan calon pelanggan agar langsung menghubungi bisnis Anda.
+                                    </p>
+
+                                    {/* Yang Anda Dapatkan */}
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
+                                        <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Yang Anda dapatkan:
+                                        </p>
+                                        <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Desain satu halaman dengan struktur berorientasi konversi</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Bagian hero, keunggulan produk, layanan, testimoni &amp; CTA</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Tombol WhatsApp langsung dengan pesan otomatis siap kirim</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Tampilan responsif untuk smartphone, tablet, dan desktop</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Optimasi performa dan kecepatan akses kilat</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Integrasi Meta Pixel atau Google Analytics sesuai kebutuhan</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Cocok Untuk */}
+                                    <div className="mt-5 rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                        <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Cocok untuk:
+                                        </span>{' '}
+                                        Produk baru, promosi jasa, campaign, dan iklan digital.
+                                    </div>
+                                </div>
+
+                                <div className="px-6 pb-6 pt-0">
+                                    <a
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20paket%20Landing%20Page."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                    >
+                                        <span>Konsultasi via WhatsApp</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Card 2: Company Profile */}
+                            <div
+                                data-reveal
+                                data-reveal-delay="100"
+                                className="flex flex-col justify-between rounded-xl border border-[#2563EB]/40 bg-white shadow-xs transition-all hover:border-[#2563EB] hover:shadow-md dark:border-[#3B82F6]/50 dark:bg-[#171A20] min-w-[275px] relative"
+                            >
+                                <div className="p-6 sm:p-7">
+                                    <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                        Untuk Bisnis &amp; Organisasi
+                                    </span>
+                                    <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Company Profile
+                                    </h3>
+                                    <div className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                        Mulai dari{' '}
+                                        <span className="text-xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Rp1.200.000
+                                        </span>
+                                    </div>
+                                    <p className="mt-3 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                        Website profesional untuk membangun kredibilitas bisnis, memperkenalkan identitas perusahaan, serta memudahkan calon pelanggan mengenal produk dan layanan Anda.
+                                    </p>
+
+                                    {/* Yang Anda Dapatkan */}
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
+                                        <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Yang Anda dapatkan:
+                                        </p>
+                                        <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Halaman profil perusahaan, tentang kami, visi dan misi</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Katalog produk lengkap atau daftar layanan unggulan</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Galeri proyek, portofolio kerja, dan dokumentasi usaha</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Informasi kontak resmi &amp; integrasi Google Maps</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Tampilan responsif untuk berbagai perangkat layar</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Optimasi SEO dasar agar website mudah ditemukan di Google</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Cocok Untuk */}
+                                    <div className="mt-5 rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                        <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Cocok untuk:
+                                        </span>{' '}
+                                        UMKM, perusahaan, lembaga pendidikan, organisasi, dan penyedia jasa.
+                                    </div>
+                                </div>
+
+                                <div className="px-6 pb-6 pt-0">
+                                    <a
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20paket%20Company%20Profile."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                    >
+                                        <span>Konsultasi via WhatsApp</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Card 3: Sistem Informasi */}
+                            <div
+                                data-reveal
+                                data-reveal-delay="200"
+                                className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
+                            >
+                                <div className="p-6 sm:p-7">
+                                    <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                        Solusi Digitalisasi Bisnis
+                                    </span>
+                                    <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Sistem Informasi
+                                    </h3>
+                                    <div className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                        Mulai{' '}
+                                        <span className="text-xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Rp3.000.000
+                                        </span>{' '}
+                                        <span className="text-xs text-[#5C6066] dark:text-[#A8A399]">
+                                            / Kustom
+                                        </span>
+                                    </div>
+                                    <p className="mt-3 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                        Aplikasi berbasis web yang dikembangkan sesuai alur kerja bisnis untuk membantu mengelola operasional, menyimpan data, dan menghasilkan laporan terstruktur.
+                                    </p>
+
+                                    {/* Yang Dapat Dikembangkan */}
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
+                                        <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Yang dapat dikembangkan:
+                                        </p>
+                                        <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Dashboard analitik memantau aktivitas &amp; ringkasan bisnis</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Manajemen transaksi, stok barang, dan pesanan</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Pengelolaan invoice &amp; database pelanggan terpusat</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Laporan yang dapat diekspor ke Excel, CSV, atau PDF</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Autentikasi aman dan manajemen hak akses pengguna (multi-role)</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Fitur kustom sesuai kebutuhan alur operasional internal</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Cocok Untuk */}
+                                    <div className="mt-5 rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                        <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Cocok untuk:
+                                        </span>{' '}
+                                        UMKM, instansi, lembaga pendidikan, dan bisnis dengan operasional khusus.
+                                    </div>
+                                </div>
+
+                                <div className="px-6 pb-6 pt-0">
+                                    <a
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20pembuatan%20Sistem%20Informasi."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                    >
+                                        <span>Diskusikan Proyek</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* 3. PORTOFOLIO & EKSPLORASI */}
+                <section
+                    id="portofolio"
+                    className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
+                >
+                    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                        <div data-reveal className="max-w-2xl">
+                            <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
+                                Portofolio &amp; Eksplorasi
+                            </span>
+                            <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                Contoh proyek dan rancang bangun
+                            </h2>
+                            <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                Gambaran rancangan website nyata untuk memberikan gambaran solusi yang tepat sesuai kebutuhan usaha Anda.
+                            </p>
+                        </div>
+
+                        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                            {/* Proyek 1: Trip Green Island */}
+                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                                        alt="Trip Green Island"
+                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div className="flex items-center justify-between gap-2">
+                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                                Website Company Profile
+                                            </span>
+                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Dummy
+                                            </span>
+                                        </div>
+                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Trip Green Island (Paket Wisata Banyuwangi)
+                                        </h3>
+                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                            Website profil dan pemesanan paket wisata alam Banyuwangi yang menyajikan pilihan destinasi, rincian fasilitas open trip, galeri foto, dan alur pemesanan langsung via WhatsApp.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Proyek 2: Kopi Seduh Nusantara */}
+                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+                                        alt="Kopi Seduh Nusantara"
+                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div className="flex items-center justify-between gap-2">
+                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                                Website Profil &amp; Katalog
+                                            </span>
+                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Dummy
+                                            </span>
+                                        </div>
+                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Kopi Seduh Nusantara (Profil Usaha Roastery)
+                                        </h3>
+                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                            Website satu halaman untuk studio sangrai kopi lokal yang menyajikan katalog biji kopi nusantara dengan profil rasa lengkap, lokasi sangrai dan jam operasional, serta alur pemesanan langsung ke nomor pengelola via WhatsApp.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Proyek 3: Klinik Fisioterapi Sehat Mandiri */}
+                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
+                                        alt="Klinik Fisioterapi Sehat Mandiri"
+                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div className="flex items-center justify-between gap-2">
+                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                                Website Layanan Kesehatan
+                                            </span>
+                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Dummy
+                                            </span>
+                                        </div>
+                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Klinik Fisioterapi Sehat Mandiri
+                                        </h3>
+                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                            Website profil informatif untuk penyedia jasa fisioterapi yang menyajikan kompetensi terapis, jenis cedera yang ditangani, jadwal konsultasi mingguan, dan alur reservasi pasien yang nyaman diakses dari ponsel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Proyek 4: Graha Cipta Studio */}
+                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                                        alt="Graha Cipta Studio"
+                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
+                                    <div>
+                                        <div className="flex items-center justify-between gap-2">
+                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                                Website Portofolio Bisnis
+                                            </span>
+                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Dummy
+                                            </span>
+                                        </div>
+                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                            Graha Cipta Studio (Arsitektur &amp; Renovasi)
+                                        </h3>
+                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                            Website portofolio untuk studio perencanaan arsitektur dan renovasi rumah yang menyajikan galeri foto proyek terbangun, estimasi alur kerja perancangan, dan tombol diskusi sketsa denah awal via WhatsApp.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* 4. TENTANG (Profil Profesional) */}
                 <section
                     id="tentang"
                     data-reveal
@@ -508,7 +912,7 @@ export default function Welcome() {
                                 </div>
                             </div>
 
-                            {/* Cerita Langsung Tempel (Tanpa Card Box) */}
+                            {/* Cerita Latar Belakang */}
                             <div className="lg:col-span-7 space-y-6">
                                 <div>
                                     <h3 className="text-xl sm:text-2xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -534,378 +938,147 @@ export default function Welcome() {
                     </div>
                 </section>
 
-                {/* 3. LAYANAN */}
+                {/* 5. KETENTUAN LAYANAN */}
                 <section
-                    id="layanan"
-                    className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
-                >
-                    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                        <div data-reveal className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#EFECE5] dark:border-[#1E2229]">
-                            <div className="max-w-xl">
-                                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                    Layanan Kami
-                                </h2>
-                                <p className="mt-2 text-base sm:text-lg font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                    Pilihan website sesuai kebutuhan usaha
-                                </p>
-                            </div>
-                            <p className="text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] max-w-md">
-                                Disesuaikan dengan skala dan tujuan usaha Anda, tanpa fitur
-                                mubazir atau biaya rumit.
-                            </p>
-                        </div>
-
-                        {/* Services Cards (MUI BasicCard Structure: Card, CardContent, CardActions) */}
-                        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
-                            {/* Card 1: Landing Page */}
-                            <div data-reveal data-reveal-delay="0" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
-                                <div className="p-6 sm:p-7">
-                                    <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Landing Page
-                                    </h3>
-                                    <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                        Konversi Penjualan &amp; Promosi Kampanye
-                                    </p>
-                                    <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website satu halaman fokus tinggi untuk peluncuran produk baru, promosi jasa, atau penawaran kampanye iklan dengan jalur pemesanan langsung ke WhatsApp.
-                                    </p>
-                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Struktur persuasi konversi (Hero, Benefit &amp; Testimoni)</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Tombol pemesanan cepat langsung ke WhatsApp</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Kecepatan akses kilat dan tampilan proporsional di HP</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Integrasi Meta Pixel atau Google Analytics</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="px-6 pb-6 pt-0">
-                                    <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20pembuatan%20Landing%20Page."
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
-                                    >
-                                        <span>Konsultasi Paket</span>
-                                        <span aria-hidden="true">&rarr;</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 2: Company Profile */}
-                            <div data-reveal data-reveal-delay="100" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
-                                <div className="p-6 sm:p-7">
-                                    <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Company Profile
-                                    </h3>
-                                    <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                        Kredibilitas Bisnis, UMKM &amp; Lembaga
-                                    </p>
-                                    <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website profil bisnis resmi yang elegan untuk membangun kepercayaan calon klien, memajang katalog produk atau layanan, serta kontak terpusat.
-                                    </p>
-                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Profil usaha, cerita brand, visi-misi &amp; legalitas</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Katalog produk lengkap atau direktori layanan unggulan</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Galeri portofolio, sertifikasi &amp; peta Google Maps</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Dasar optimasi mesin pencari (SEO) &amp; domain resmi</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="px-6 pb-6 pt-0">
-                                    <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20pembuatan%20Company%20Profile."
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
-                                    >
-                                        <span>Konsultasi Paket</span>
-                                        <span aria-hidden="true">&rarr;</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Card 3: Web App / Mini ERP */}
-                            <div data-reveal data-reveal-delay="200" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
-                                <div className="p-6 sm:p-7">
-                                    <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Web App &amp; Mini ERP
-                                    </h3>
-                                    <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                        Otomasi Operasional, Inventaris &amp; Data
-                                    </p>
-                                    <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Sistem informasi operasional khusus untuk membantu pencatatan transaksi, manajemen stok barang, pelaporan berkala, hingga hak akses multi-pengguna.
-                                    </p>
-                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Dasbor ringkasan analitik data &amp; metrik penjualan</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Manajemen inventaris, pesanan &amp; rekap invoice</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Ekspor laporan format Excel, CSV, atau cetak PDF</span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Autentikasi aman dengan pembatasan hak akses staf</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="px-6 pb-6 pt-0">
-                                    <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20Web%20App%20dan%20Mini%20ERP."
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
-                                    >
-                                        <span>Konsultasi Paket</span>
-                                        <span aria-hidden="true">&rarr;</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* 4. HARGA (Estimasi Biaya) */}
-                <section
-                    id="harga"
+                    id="ketentuan"
                     data-reveal
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
-                    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                        <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-10 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
-                            <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
-                                Estimasi Biaya
-                            </span>
-                            <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Biaya menyesuaikan kebutuhan dan fitur website
-                            </h2>
-                            <p className="mt-4 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                Biaya menyesuaikan kebutuhan dan fitur website. Ceritakan
-                                rencana Anda, lalu saya akan membantu menyusun ruang lingkup
-                                dan estimasinya secara transparan tanpa biaya tersembunyi.
-                            </p>
-
-                            <div className="mt-8 border-t border-[#EFECE5] pt-6 text-xs sm:text-sm text-[#5C6066] space-y-3.5 dark:border-[#262A32] dark:text-[#A8A399]">
-                                <div className="font-medium text-[#181B1F] dark:text-[#F5F2EB]">
-                                    Hal yang selalu diperhatikan dalam setiap pengerjaan:
-                                </div>
-                                <div className="flex items-start gap-2.5">
-                                    <span className="text-[#2563EB] dark:text-[#60A5FA] font-mono">
-                                        [✓]
-                                    </span>
-                                    <span>
-                                        Tampilan responsif dan proporsional di layar ponsel, tablet,
-                                        dan komputer.
-                                    </span>
-                                </div>
-                                <div className="flex items-start gap-2.5">
-                                    <span className="text-[#2563EB] dark:text-[#60A5FA] font-mono">
-                                        [✓]
-                                    </span>
-                                    <span>
-                                        Kecepatan muat ringan, tanpa pustaka atau skrip berat yang
-                                        tidak dibutuhkan.
-                                    </span>
-                                </div>
-                                <div className="flex items-start gap-2.5">
-                                    <span className="text-[#2563EB] dark:text-[#60A5FA] font-mono">
-                                        [✓]
-                                    </span>
-                                    <span>
-                                        Tombol WhatsApp langsung dengan draf pesan awal yang mudah
-                                        dikirim pelanggan.
-                                    </span>
-                                </div>
-                                <div className="flex items-start gap-2.5">
-                                    <span className="text-[#2563EB] dark:text-[#60A5FA] font-mono">
-                                        [✓]
-                                    </span>
-                                    <span>
-                                        Struktur navigasi semantik dan dasar pengaturan mesin pencari
-                                        (SEO).
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div className="mt-8 pt-2">
-                                <a
-                                    href={WA_URL}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
-                                >
-                                    <span>Tanyakan estimasi lewat WhatsApp</span>
-                                    <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* 5. PORTOFOLIO */}
-                <section
-                    id="portofolio"
-                    className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
-                >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                        <div data-reveal className="max-w-2xl">
+                        <div className="max-w-2xl">
                             <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
-                                Portofolio &amp; Eksplorasi
+                                Standar Kerja Sama
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Contoh proyek dan rancang bangun
+                                Ketentuan Layanan
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                Gambaran rancangan website nyata untuk memberikan gambaran solusi
-                                yang tepat sesuai kebutuhan usaha Anda.
+                                Transparansi batasan ruang lingkup, jadwal, dan tanggung jawab teknis untuk menjaga kepastian hasil kerja serta kenyamanan bersama.
                             </p>
                         </div>
 
-                        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                            {/* Proyek 1: Trip Green Island */}
-                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
-                                        alt="Trip Green Island"
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                        loading="lazy"
-                                    />
+                        {/* Grid 6 Ketentuan Utama */}
+                        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        01
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Revisi Desain
+                                    </h3>
                                 </div>
-                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
-                                    <div>
-                                        <div className="flex items-center justify-between gap-2">
-                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                                Website Company Profile
-                                            </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
-                                            </span>
-                                        </div>
-                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Trip Green Island (Paket Wisata Banyuwangi)
-                                        </h3>
-                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                            Website profil dan pemesanan paket wisata alam Banyuwangi yang menyajikan pilihan destinasi, rincian fasilitas open trip, galeri foto, dan alur pemesanan langsung via WhatsApp.
-                                        </p>
-                                    </div>
-                                </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Termasuk 2 kali revisi desain per proyek pada tahap rancangan dan pembuatan. Penambahan fitur baru di luar ruang lingkup awal akan dibahas terpisah agar timeline proyek tetap terjaga.
+                                </p>
                             </div>
 
-                            {/* Proyek 2: Kopi Seduh Nusantara */}
-                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
-                                        alt="Kopi Seduh Nusantara"
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                        loading="lazy"
-                                    />
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        02
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Domain &amp; Setup DNS
+                                    </h3>
                                 </div>
-                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
-                                    <div>
-                                        <div className="flex items-center justify-between gap-2">
-                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                                Website Profil &amp; Katalog
-                                            </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
-                                            </span>
-                                        </div>
-                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Kopi Seduh Nusantara (Profil Usaha Roastery)
-                                        </h3>
-                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                            Website satu halaman untuk studio sangrai kopi lokal yang menyajikan katalog biji kopi nusantara dengan profil rasa lengkap, lokasi sangrai dan jam operasional, serta alur pemesanan langsung ke nomor pengelola via WhatsApp.
-                                        </p>
-                                    </div>
-                                </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Bantuan pemilihan nama, pendaftaran, dan konfigurasi DNS domain resmi (.com, .id, dll) hingga aktif. Biaya tahunan domain ditanggung klien secara transparan tanpa biaya tersembunyi.
+                                </p>
                             </div>
 
-                            {/* Proyek 3: Klinik Fisioterapi Sehat Mandiri */}
-                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
-                                        alt="Klinik Fisioterapi Sehat Mandiri"
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                        loading="lazy"
-                                    />
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        03
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Hosting &amp; Server
+                                    </h3>
                                 </div>
-                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
-                                    <div>
-                                        <div className="flex items-center justify-between gap-2">
-                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                                Website Layanan Kesehatan
-                                            </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
-                                            </span>
-                                        </div>
-                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Klinik Fisioterapi Sehat Mandiri
-                                        </h3>
-                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                            Website profil informatif untuk penyedia jasa fisioterapi yang menyajikan kompetensi terapis, jenis cedera yang ditangani, jadwal konsultasi mingguan, dan alur reservasi pasien yang nyaman diakses dari ponsel.
-                                        </p>
-                                    </div>
-                                </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Konfigurasi server andal dan instalasi sertifikat SSL gratis (HTTPS). Biaya sewa hosting atau server cloud ditanggung klien sesuai skala lalu lintas dan kebutuhan website.
+                                </p>
                             </div>
 
-                            {/* Proyek 4: Graha Cipta Studio */}
-                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-                                        alt="Graha Cipta Studio"
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                        loading="lazy"
-                                    />
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        04
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Materi &amp; Konten
+                                    </h3>
                                 </div>
-                                <div className="p-5 sm:p-6 flex flex-col justify-between flex-1">
-                                    <div>
-                                        <div className="flex items-center justify-between gap-2">
-                                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                                Website Portofolio Bisnis
-                                            </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
-                                            </span>
-                                        </div>
-                                        <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Graha Cipta Studio (Arsitektur &amp; Renovasi)
-                                        </h3>
-                                        <p className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                            Website portofolio untuk studio perencanaan arsitektur dan renovasi rumah yang menyajikan galeri foto proyek terbangun, estimasi alur kerja perancangan, dan tombol diskusi sketsa denah awal via WhatsApp.
-                                        </p>
-                                    </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Foto, logo, dan rincian informasi dasar disediakan oleh klien. Saya akan membantu merapikan susunan tulisan (copywriting) agar nyaman dibaca dan meyakinkan pelanggan.
+                                </p>
+                            </div>
+
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        05
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Garansi Bug 30 Hari
+                                    </h3>
+                                </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Setiap website mendapatkan garansi perbaikan kendala teknis (bug) selama 30 hari gratis setelah serah terima proyek. Dukungan pemeliharaan berkala dapat dilanjutkan bila diperlukan.
+                                </p>
+                            </div>
+
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        06
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Waktu Pengerjaan
+                                    </h3>
+                                </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Estimasi pengerjaan: Landing Page 3-5 hari kerja, Company Profile 1-2 minggu, dan Sistem Informasi 2-4 minggu, terhitung sejak materi lengkap diterima.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Catatan Khusus Sistem Informasi */}
+                        <div className="mt-8 rounded-xl border border-[#2563EB]/30 bg-[#EFF6FF]/60 p-6 dark:border-[#2563EB]/40 dark:bg-[#132038]/50">
+                            <h4 className="text-sm font-bold text-[#1D4ED8] dark:text-[#93C5FD] flex items-center gap-2">
+                                <svg
+                                    className="h-4 w-4 shrink-0"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
+                                Catatan Khusus Pengembangan Sistem Informasi &amp; Web App
+                            </h4>
+                            <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#1E3A8A] dark:text-[#BFDBFE]">
+                                <div className="flex items-start gap-2">
+                                    <span className="font-bold">•</span>
+                                    <span>Penyusunan dokumen ruang lingkup (Scope of Work / SOW) tertulis sebelum pengembangan.</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span className="font-bold">•</span>
+                                    <span>Pembatasan jumlah role pengguna awal yang disepakati bersama.</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span className="font-bold">•</span>
+                                    <span>Penyediaan mekanisme cadangan data (backup database) berkala untuk keamanan operasional.</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span className="font-bold">•</span>
+                                    <span>Serah terima source code penuh beserta dokumentasi alur sistem kepada pemilik usaha.</span>
                                 </div>
                             </div>
                         </div>
