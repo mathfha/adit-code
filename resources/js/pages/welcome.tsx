@@ -557,43 +557,40 @@ export default function Welcome() {
 
                         {/* Services Cards (MUI BasicCard Structure: Card, CardContent, CardActions) */}
                         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
-                            {/* Service 1 */}
+                            {/* Card 1: Landing Page */}
                             <div data-reveal data-reveal-delay="0" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
                                 <div className="p-6 sm:p-7">
-                                    <p className="text-xs font-mono font-medium text-[#5C6066] dark:text-[#A8A399] tracking-wider uppercase mb-1">
-                                        LAYANAN 01
-                                    </p>
                                     <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Website profil usaha
+                                        Landing Page
                                     </h3>
                                     <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                        Cocok untuk UMKM, toko, klinik, dan jasa lokal
+                                        Konversi Penjualan &amp; Promosi Kampanye
                                     </p>
                                     <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Jelaskan usaha, layanan, lokasi, dan cara menghubungi Anda dalam satu website yang mudah dibuka pelanggan.
+                                        Website satu halaman fokus tinggi untuk peluncuran produk baru, promosi jasa, atau penawaran kampanye iklan dengan jalur pemesanan langsung ke WhatsApp.
                                     </p>
                                     <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Profil usaha dan cerita ringkas</span>
+                                            <span>Struktur persuasi konversi (Hero, Benefit &amp; Testimoni)</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Daftar layanan atau katalog produk</span>
+                                            <span>Tombol pemesanan cepat langsung ke WhatsApp</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Informasi lokasi dan jam operasional</span>
+                                            <span>Kecepatan akses kilat dan tampilan proporsional di HP</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Tombol chat WhatsApp langsung</span>
+                                            <span>Integrasi Meta Pixel atau Google Analytics</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="px-6 pb-6 pt-0">
                                     <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20dengan%20Website%20Profil%20Usaha."
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20pembuatan%20Landing%20Page."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
@@ -604,43 +601,40 @@ export default function Welcome() {
                                 </div>
                             </div>
 
-                            {/* Service 2 */}
+                            {/* Card 2: Company Profile */}
                             <div data-reveal data-reveal-delay="100" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
                                 <div className="p-6 sm:p-7">
-                                    <p className="text-xs font-mono font-medium text-[#5C6066] dark:text-[#A8A399] tracking-wider uppercase mb-1">
-                                        LAYANAN 02
-                                    </p>
                                     <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Website khusus
+                                        Company Profile
                                     </h3>
                                     <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                        Fitur dan estimasi dibahas sebelum pengerjaan
+                                        Kredibilitas Bisnis, UMKM &amp; Lembaga
                                     </p>
                                     <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website dengan halaman dan fungsi yang disusun berdasarkan kebutuhan spesifik proyek Anda.
+                                        Website profil bisnis resmi yang elegan untuk membangun kepercayaan calon klien, memajang katalog produk atau layanan, serta kontak terpusat.
                                     </p>
                                     <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Landing page kampanye promosi</span>
+                                            <span>Profil usaha, cerita brand, visi-misi &amp; legalitas</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Portofolio atau katalog interaktif</span>
+                                            <span>Katalog produk lengkap atau direktori layanan unggulan</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Formulir reservasi atau pemesanan</span>
+                                            <span>Galeri portofolio, sertifikasi &amp; peta Google Maps</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Tampilan disesuaikan identitas brand</span>
+                                            <span>Dasar optimasi mesin pencari (SEO) &amp; domain resmi</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="px-6 pb-6 pt-0">
                                     <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20dengan%20Website%20Khusus."
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20pembuatan%20Company%20Profile."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
@@ -651,43 +645,40 @@ export default function Welcome() {
                                 </div>
                             </div>
 
-                            {/* Service 3 */}
+                            {/* Card 3: Web App / Mini ERP */}
                             <div data-reveal data-reveal-delay="200" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
                                 <div className="p-6 sm:p-7">
-                                    <p className="text-xs font-mono font-medium text-[#5C6066] dark:text-[#A8A399] tracking-wider uppercase mb-1">
-                                        LAYANAN 03
-                                    </p>
                                     <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Sistem informasi sederhana
+                                        Web App &amp; Mini ERP
                                     </h3>
                                     <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
-                                        Ruang lingkup dibicarakan di awal secara realistis
+                                        Otomasi Operasional, Inventaris &amp; Data
                                     </p>
                                     <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website dengan fitur untuk menyajikan atau mengelola informasi internal sesuai alur yang disepakati.
+                                        Sistem informasi operasional khusus untuk membantu pencatatan transaksi, manajemen stok barang, pelaporan berkala, hingga hak akses multi-pengguna.
                                     </p>
                                     <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Dasbor ringkasan pencatatan operasional</span>
+                                            <span>Dasbor ringkasan analitik data &amp; metrik penjualan</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Pengelolaan data inventaris atau pesanan</span>
+                                            <span>Manajemen inventaris, pesanan &amp; rekap invoice</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Ekspor data format CSV atau tabel</span>
+                                            <span>Ekspor laporan format Excel, CSV, atau cetak PDF</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                            <span>Pembagian akses pengguna internal</span>
+                                            <span>Autentikasi aman dengan pembatasan hak akses staf</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="px-6 pb-6 pt-0">
                                     <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20dengan%20Sistem%20Informasi%20Sederhana."
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20Web%20App%20dan%20Mini%20ERP."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
