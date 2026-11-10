@@ -87,7 +87,59 @@ export default function Welcome() {
         { href: '#kontak', label: 'Kontak' },
     ];
 
-    const faqItems = [
+    const faqItems: { q: string; a: React.ReactNode }[] = [
+        {
+            q: 'Bagaimana alur pengerjaan website dari awal sampai selesai?',
+            a: (
+                <div className="space-y-3.5 pt-1">
+                    <p className="text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
+                        Alur pengerjaan di Adit Code dirancang jelas, transparan, dan bertahap:
+                    </p>
+                    <div className="space-y-3">
+                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
+                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
+                                01 Konsultasi
+                            </span>
+                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                Ceritakan masalah dan kebutuhan usahamu. Saya bantu cari solusi yang pas.
+                            </p>
+                        </div>
+                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
+                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
+                                02 Deal
+                            </span>
+                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                Kita sepakati ruang lingkup, harga, dan jadwal. Pengerjaan dimulai setelah DP.
+                            </p>
+                        </div>
+                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
+                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
+                                03 Planning
+                            </span>
+                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                Kita rancang isi halaman, struktur, dan tampilan sebelum mulai dibangun.
+                            </p>
+                        </div>
+                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
+                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
+                                04 Pembuatan
+                            </span>
+                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                Website dibangun sesuai kesepakatan. Progres dikabari lewat WhatsApp, dan revisi sudah termasuk.
+                            </p>
+                        </div>
+                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
+                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
+                                05 Serah terima
+                            </span>
+                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
+                                Pengujian akhir, domain disambungkan, lalu kamu menerima akses dan panduan singkat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            ),
+        },
         {
             q: 'Apa saja yang perlu saya siapkan sebelum pembuatan website dimulai?',
             a: 'Cukup siapkan cerita singkat profil usaha, daftar layanan atau produk, dan kontak yang ingin ditampilkan. Jika materi belum tersusun rapi, saya akan membantu merapikan struktur tulisan dan alur informasinya saat diskusi awal.',
@@ -485,7 +537,7 @@ export default function Welcome() {
                     </div>
                 </section>
 
-                {/* 3. LAYANAN & CARA KERJA */}
+                {/* 3. LAYANAN */}
                 <section
                     id="layanan"
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
@@ -589,71 +641,6 @@ export default function Welcome() {
                                 </div>
                                 <div className="mt-6 pt-4 border-t border-[#EFECE5] dark:border-[#262A32] text-xs font-mono text-[#5C6066] dark:text-[#A8A399]">
                                     Ruang lingkup dibicarakan di awal secara realistis
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Process Flow attached to services */}
-                        <div id="cara-kerja" data-reveal className="mt-16 pt-12 border-t border-[#EFECE5] dark:border-[#1E2229] scroll-mt-16">
-                            <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
-                                Alur Pengerjaan
-                            </span>
-                            <h3 className="mt-2 text-xl sm:text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Cara kerja yang jelas dan bertahap
-                            </h3>
-
-                            <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                                <div className="border-l-2 border-[#2563EB] pl-4 dark:border-[#60A5FA]">
-                                    <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
-                                        TAHAP 01
-                                    </span>
-                                    <h4 className="mt-2 text-base font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Konsultasi
-                                    </h4>
-                                    <p className="mt-2 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Ceritakan usaha, kebutuhan, dan fitur yang dibayangkan. Saya
-                                        akan membantu memperjelas ruang lingkup sebelum memberi
-                                        estimasi.
-                                    </p>
-                                </div>
-
-                                <div className="border-l-2 border-[#D6D0C4] pl-4 dark:border-[#2C313B]">
-                                    <span className="font-mono text-xs font-bold text-[#5C6066] dark:text-[#A8A399]">
-                                        TAHAP 02
-                                    </span>
-                                    <h4 className="mt-2 text-base font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Rencana dan desain
-                                    </h4>
-                                    <p className="mt-2 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Kita sepakati isi halaman, struktur, referensi, dan materi yang
-                                        perlu disiapkan sebelum website mulai dibangun.
-                                    </p>
-                                </div>
-
-                                <div className="border-l-2 border-[#D6D0C4] pl-4 dark:border-[#2C313B]">
-                                    <span className="font-mono text-xs font-bold text-[#5C6066] dark:text-[#A8A399]">
-                                        TAHAP 03
-                                    </span>
-                                    <h4 className="mt-2 text-base font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Pengembangan
-                                    </h4>
-                                    <p className="mt-2 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Saya membangun website sesuai ruang lingkup yang disetujui dan
-                                        memberi kabar saat ada bagian yang perlu ditinjau bersama.
-                                    </p>
-                                </div>
-
-                                <div className="border-l-2 border-[#D6D0C4] pl-4 dark:border-[#2C313B]">
-                                    <span className="font-mono text-xs font-bold text-[#5C6066] dark:text-[#A8A399]">
-                                        TAHAP 04
-                                    </span>
-                                    <h4 className="mt-2 text-base font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Serah terima
-                                    </h4>
-                                    <p className="mt-2 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Pengujian akhir seluruh tautan dan tampilan di ponsel,
-                                        penyambungan domain, panduan ringkas, serta serah terima penuh.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -925,9 +912,9 @@ export default function Welcome() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-3 pr-8 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    <div className="mt-3 pr-8 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                         {item.a}
-                                    </p>
+                                    </div>
                                 </details>
                             ))}
                         </div>
