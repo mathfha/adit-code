@@ -1179,22 +1179,22 @@ export default function Welcome() {
                         </p>
                     </div>
 
-                    {/* Circular Action Icons (WhatsApp, Instagram, Email, LinkedIn, GitHub) */}
-                    <div data-reveal data-reveal-delay="100" className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                    {/* Circular Action Icons (WhatsApp, Instagram, Email) with Official Brand Colors */}
+                    <div data-reveal data-reveal-delay="100" className="flex flex-wrap items-center justify-center gap-4">
                         <a
                             href={WA_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Hubungi via WhatsApp (+62 812-5670-0457)"
-                            className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#0F1115] transition-all hover:scale-105 hover:bg-[#2563EB] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
+                            className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-md transition-all hover:scale-110 hover:bg-[#20BA5A] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
                         >
                             <svg
-                                className="h-5 w-5"
+                                className="h-6 w-6"
                                 fill="currentColor"
                                 viewBox="0 0 24 24"
                                 aria-hidden="true"
                             >
-                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.179.181-.077.355.101.174.45 1.743 1.968 2.091.196.045.352.033.483-.029.13-.062.584-.68.742-.912.159-.232.318-.193.534-.113.217.08 1.378.65 1.616.769.238.119.398.177.456.277.058.1.058.579-.086.984z" />
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25.7-1.44 1.34-2.02 1.43-.52.08-1.19.11-3.41-.8-2.22-.92-3.66-3.17-3.77-3.32-.11-.15-.9-1.2-.9-2.29s.57-1.63.78-1.85c.2-.23.44-.28.59-.28.15 0 .3 0 .43.01.14.01.32-.05.5.38.19.45.65 1.58.71 1.7.06.11.1.25.02.4-.08.15-.12.24-.23.37-.11.13-.23.29-.33.39-.11.11-.23.23-.1.45.13.22.58.96 1.24 1.55.86.76 1.58 1 1.8 1.11.23.11.36.09.49-.06.13-.15.56-.65.71-.88.15-.22.3-.19.51-.11.21.08 1.33.63 1.56.74.23.11.38.17.44.27.06.1.06.58-.19 1.28z" />
                             </svg>
                         </a>
 
@@ -1203,10 +1203,10 @@ export default function Welcome() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram @adit.code.id"
-                            className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#0F1115] transition-all hover:scale-105 hover:bg-[#2563EB] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
+                            className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-md transition-all hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#DD2A7B] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
                         >
                             <svg
-                                className="h-5 w-5"
+                                className="h-6 w-6"
                                 fill="currentColor"
                                 viewBox="0 0 24 24"
                                 aria-hidden="true"
@@ -1218,10 +1218,10 @@ export default function Welcome() {
                         <a
                             href={EMAIL_URL}
                             aria-label="Kirim Email ke adit.rwet@gmail.com"
-                            className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#0F1115] transition-all hover:scale-105 hover:bg-[#2563EB] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
+                            className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EA4335] text-white shadow-md transition-all hover:scale-110 hover:bg-[#D93025] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#EA4335] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
                         >
                             <svg
-                                className="h-5 w-5"
+                                className="h-6 w-6"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -1232,44 +1232,6 @@ export default function Welcome() {
                                     strokeLinejoin="round"
                                     strokeWidth="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                />
-                            </svg>
-                        </a>
-
-                        <a
-                            href={LINKEDIN_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn Aditya Rahman"
-                            className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#0F1115] transition-all hover:scale-105 hover:bg-[#2563EB] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
-                        >
-                            <svg
-                                className="h-5 w-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg>
-                        </a>
-
-                        <a
-                            href={GITHUB_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub Aditya Rahman"
-                            className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#0F1115] transition-all hover:scale-105 hover:bg-[#2563EB] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
-                        >
-                            <svg
-                                className="h-5 w-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                 />
                             </svg>
                         </a>
