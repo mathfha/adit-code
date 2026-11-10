@@ -146,7 +146,7 @@ export default function Welcome() {
         },
         {
             q: 'Apakah saya harus sudah membeli domain dan hosting sendiri?',
-            a: 'Belum harus. Kita bisa membicarakan nama domain (.com, .id, atau lainnya) dan pilihan hosting yang sesuai dengan kebutuhan serta anggaran usaha Anda. Saya siap membantu proses pemilihan dan penyambungannya.',
+            a: 'Tidak perlu repot. Seluruh paket layanan sudah termasuk nama domain resmi (.com, .id, dll) dan ruang hosting siap pakai untuk tahun pertama. Anda cukup menyiapkan materi atau cerita usaha.',
         },
         {
             q: 'Berapa lama proses pengerjaan website sampai siap digunakan?',
@@ -420,14 +420,14 @@ export default function Welcome() {
                                     <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Landing Page
                                     </h3>
-                                    <div className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                        Mulai dari{' '}
-                                        <span className="text-xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Rp500.000
-                                        </span>
+                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-md bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
+                                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        <span>Sudah Termasuk Domain &amp; Hosting</span>
                                     </div>
                                     <p className="mt-3 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website satu halaman yang dirancang untuk memperkenalkan produk atau jasa dan mengarahkan calon pelanggan agar langsung menghubungi bisnis Anda.
+                                        Website satu halaman praktis yang dirancang khusus untuk mempromosikan produk atau jasa Anda, agar calon pembeli langsung tertarik dan mudah memesan via WhatsApp.
                                     </p>
 
                                     {/* Yang Anda Dapatkan */}
@@ -438,27 +438,23 @@ export default function Welcome() {
                                         <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Desain satu halaman dengan struktur berorientasi konversi</span>
+                                                <span>Sudah termasuk nama domain (.com / .id) dan hosting siap pakai</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Bagian hero, keunggulan produk, layanan, testimoni &amp; CTA</span>
+                                                <span>Halaman promosi lengkap: foto produk, keunggulan, ulasan pembeli, dan kontak</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Tombol WhatsApp langsung dengan pesan otomatis siap kirim</span>
+                                                <span>Tombol WhatsApp langsung yang otomatis membuka chat dengan nomor Anda</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Tampilan responsif untuk smartphone, tablet, dan desktop</span>
+                                                <span>Tampilan rapi, nyaman dibaca, dan pas dibuka di HP maupun komputer</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Optimasi performa dan kecepatan akses kilat</span>
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Integrasi Meta Pixel atau Google Analytics sesuai kebutuhan</span>
+                                                <span>Loading cepat dan ringan saat dibuka calon pelanggan tanpa hambatan</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -468,18 +464,18 @@ export default function Welcome() {
                                         <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
                                             Cocok untuk:
                                         </span>{' '}
-                                        Produk baru, promosi jasa, campaign, dan iklan digital.
+                                        Produk baru, jualan online, promosi jasa, dan penawaran khusus.
                                     </div>
                                 </div>
 
                                 <div className="px-6 pb-6 pt-0">
                                     <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20paket%20Landing%20Page."
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Landing%20Page."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
                                     >
-                                        <span>Konsultasi via WhatsApp</span>
+                                        <span>Tanya Biaya via WhatsApp</span>
                                         <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </div>
@@ -498,14 +494,14 @@ export default function Welcome() {
                                     <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Company Profile
                                     </h3>
-                                    <div className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                        Mulai dari{' '}
-                                        <span className="text-xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Rp1.200.000
-                                        </span>
+                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-md bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
+                                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        <span>Sudah Termasuk Domain &amp; Hosting</span>
                                     </div>
                                     <p className="mt-3 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website profesional untuk membangun kredibilitas bisnis, memperkenalkan identitas perusahaan, serta memudahkan calon pelanggan mengenal produk dan layanan Anda.
+                                        Website resmi untuk meningkatkan kepercayaan pelanggan, memperkenalkan cerita usaha Anda, menampilkan daftar produk/layanan, dan memudahkan orang menemukan lokasi Anda.
                                     </p>
 
                                     {/* Yang Anda Dapatkan */}
@@ -516,27 +512,27 @@ export default function Welcome() {
                                         <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Halaman profil perusahaan, tentang kami, visi dan misi</span>
+                                                <span>Sudah termasuk nama domain (.com / .id) dan hosting siap pakai</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Katalog produk lengkap atau daftar layanan unggulan</span>
+                                                <span>Halaman profil usaha, cerita perjalanan bisnis, serta visi dan misi</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Galeri proyek, portofolio kerja, dan dokumentasi usaha</span>
+                                                <span>Daftar katalog produk lengkap atau galeri foto layanan Anda</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Informasi kontak resmi &amp; integrasi Google Maps</span>
+                                                <span>Informasi kontak resmi, nomor telepon, dan petunjuk peta Google Maps</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Tampilan responsif untuk berbagai perangkat layar</span>
+                                                <span>Tampilan elegan dan rapi saat dibuka di layar HP maupun laptop</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Optimasi SEO dasar agar website mudah ditemukan di Google</span>
+                                                <span>Dibantu agar nama usaha Anda mudah dicari di pencarian Google</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -546,18 +542,18 @@ export default function Welcome() {
                                         <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
                                             Cocok untuk:
                                         </span>{' '}
-                                        UMKM, perusahaan, lembaga pendidikan, organisasi, dan penyedia jasa.
+                                        UMKM, toko, kantor, sekolah, yayasan, dan penyedia jasa.
                                     </div>
                                 </div>
 
                                 <div className="px-6 pb-6 pt-0">
                                     <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20paket%20Company%20Profile."
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Company%20Profile."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
                                     >
-                                        <span>Konsultasi via WhatsApp</span>
+                                        <span>Tanya Biaya via WhatsApp</span>
                                         <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </div>
@@ -576,48 +572,45 @@ export default function Welcome() {
                                     <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Sistem Informasi
                                     </h3>
-                                    <div className="mt-2 text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                        Mulai{' '}
-                                        <span className="text-xl font-bold text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Rp3.000.000
-                                        </span>{' '}
-                                        <span className="text-xs text-[#5C6066] dark:text-[#A8A399]">
-                                            / Kustom
-                                        </span>
+                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-md bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
+                                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        <span>Sudah Termasuk Hosting &amp; Server</span>
                                     </div>
                                     <p className="mt-3 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Aplikasi berbasis web yang dikembangkan sesuai alur kerja bisnis untuk membantu mengelola operasional, menyimpan data, dan menghasilkan laporan terstruktur.
+                                        Aplikasi berbasis website untuk memudahkan pengelolaan data usaha sehari-hari secara rapi, cepat, dan otomatis tanpa repot rekap manual di kertas atau Excel terpisah.
                                     </p>
 
-                                    {/* Yang Dapat Dikembangkan */}
+                                    {/* Yang Dapat Dibuat */}
                                     <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
                                         <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Yang dapat dikembangkan:
+                                            Yang dapat dibuat:
                                         </p>
                                         <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Dashboard analitik memantau aktivitas &amp; ringkasan bisnis</span>
+                                                <span>Sudah termasuk sewa server online yang aman dan cadangan data berkala</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Manajemen transaksi, stok barang, dan pesanan</span>
+                                                <span>Halaman utama untuk memantau ringkasan penjualan dan stok barang harian</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Pengelolaan invoice &amp; database pelanggan terpusat</span>
+                                                <span>Pencatatan transaksi belanja, riwayat pesanan, dan daftar pelanggan</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Laporan yang dapat diekspor ke Excel, CSV, atau PDF</span>
+                                                <span>Cetak nota / faktur otomatis dan unduh laporan ke format Excel atau PDF</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Autentikasi aman dan manajemen hak akses pengguna (multi-role)</span>
+                                                <span>Akun login terpisah untuk pemilik dan karyawan sesuai tugas masing-masing</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Fitur kustom sesuai kebutuhan alur operasional internal</span>
+                                                <span>Fitur bisa disesuaikan dengan alur kerja dan kebiasaan usaha Anda</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -627,18 +620,18 @@ export default function Welcome() {
                                         <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
                                             Cocok untuk:
                                         </span>{' '}
-                                        UMKM, instansi, lembaga pendidikan, dan bisnis dengan operasional khusus.
+                                        Usaha, toko, instansi, atau lembaga yang ingin pencatatan operasionalnya otomatis dan rapi.
                                     </div>
                                 </div>
 
                                 <div className="px-6 pb-6 pt-0">
                                     <a
-                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20konsultasi%20pembuatan%20Sistem%20Informasi."
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20pembuatan%20Sistem%20Informasi."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
                                     >
-                                        <span>Diskusikan Proyek</span>
+                                        <span>Tanya Biaya via WhatsApp</span>
                                         <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </div>
@@ -979,11 +972,11 @@ export default function Welcome() {
                                         02
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Domain &amp; Setup DNS
+                                        Domain Resmi
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Bantuan pemilihan nama, pendaftaran, dan konfigurasi DNS domain resmi (.com, .id, dll) hingga aktif. Biaya tahunan domain ditanggung klien secara transparan tanpa biaya tersembunyi.
+                                    Sudah termasuk bantuan pendaftaran dan pengaturan nama domain resmi (.com, .id, dll) untuk tahun pertama, langsung disambungkan hingga website aktif dan siap diakses.
                                 </p>
                             </div>
 
@@ -997,7 +990,7 @@ export default function Welcome() {
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Konfigurasi server andal dan instalasi sertifikat SSL gratis (HTTPS). Biaya sewa hosting atau server cloud ditanggung klien sesuai skala lalu lintas dan kebutuhan website.
+                                    Sudah termasuk ruang penyimpanan website (hosting) yang cepat, stabil, dan sertifikat keamanan SSL gratis (HTTPS) untuk tahun pertama pengerjaan.
                                 </p>
                             </div>
 
