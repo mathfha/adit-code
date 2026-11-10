@@ -44,6 +44,39 @@ export default function Welcome() {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [mobileMenuOpen]);
 
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const elements = document.querySelectorAll<HTMLElement>('[data-reveal]');
+        elements.forEach((el) => {
+            const delay = el.getAttribute('data-reveal-delay');
+            if (delay) {
+                el.style.transitionDelay = `${delay}ms`;
+            }
+            el.classList.add('reveal-init');
+        });
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px',
+            }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
+
     const navItems = [
         { href: '#beranda', label: 'Beranda' },
         { href: '#tentang', label: 'Tentang' },
@@ -264,6 +297,7 @@ export default function Welcome() {
                 {/* 1. BERANDA (Hero Section) */}
                 <section
                     id="beranda"
+                    data-reveal
                     className="mx-auto max-w-6xl px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 scroll-mt-16"
                 >
                     <div className="max-w-3xl">
@@ -302,6 +336,7 @@ export default function Welcome() {
                 {/* 2. TENTANG (Profil Aditya Rahman) */}
                 <section
                     id="tentang"
+                    data-reveal
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -456,7 +491,7 @@ export default function Welcome() {
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#EFECE5] dark:border-[#1E2229]">
+                        <div data-reveal className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#EFECE5] dark:border-[#1E2229]">
                             <div className="max-w-xl">
                                 <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
                                     Layanan Kami
@@ -474,7 +509,7 @@ export default function Welcome() {
                         {/* Services Cards */}
                         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
                             {/* Service 1 */}
-                            <div className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="0" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div>
                                     <span className="font-mono text-xs font-semibold text-[#2563EB] dark:text-[#60A5FA]">
                                         LAYANAN 01
@@ -502,7 +537,7 @@ export default function Welcome() {
                             </div>
 
                             {/* Service 2 */}
-                            <div className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="100" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div>
                                     <span className="font-mono text-xs font-semibold text-[#2563EB] dark:text-[#60A5FA]">
                                         LAYANAN 02
@@ -530,7 +565,7 @@ export default function Welcome() {
                             </div>
 
                             {/* Service 3 */}
-                            <div className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="200" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div>
                                     <span className="font-mono text-xs font-semibold text-[#2563EB] dark:text-[#60A5FA]">
                                         LAYANAN 03
@@ -559,7 +594,7 @@ export default function Welcome() {
                         </div>
 
                         {/* Process Flow attached to services */}
-                        <div id="cara-kerja" className="mt-16 pt-12 border-t border-[#EFECE5] dark:border-[#1E2229] scroll-mt-16">
+                        <div id="cara-kerja" data-reveal className="mt-16 pt-12 border-t border-[#EFECE5] dark:border-[#1E2229] scroll-mt-16">
                             <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
                                 Alur Pengerjaan
                             </span>
@@ -628,6 +663,7 @@ export default function Welcome() {
                 {/* 4. HARGA (Estimasi Biaya) */}
                 <section
                     id="harga"
+                    data-reveal
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
                     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -707,7 +743,7 @@ export default function Welcome() {
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                        <div className="max-w-2xl">
+                        <div data-reveal className="max-w-2xl">
                             <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
                                 Portofolio &amp; Eksplorasi
                             </span>
@@ -722,7 +758,7 @@ export default function Welcome() {
 
                         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                             {/* Proyek 1: Trip Green Island */}
-                            <div className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
                                     <img
                                         src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
@@ -752,7 +788,7 @@ export default function Welcome() {
                             </div>
 
                             {/* Proyek 2: Kopi Seduh Nusantara */}
-                            <div className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
                                     <img
                                         src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
@@ -782,7 +818,7 @@ export default function Welcome() {
                             </div>
 
                             {/* Proyek 3: Klinik Fisioterapi Sehat Mandiri */}
-                            <div className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
                                     <img
                                         src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
@@ -812,7 +848,7 @@ export default function Welcome() {
                             </div>
 
                             {/* Proyek 4: Graha Cipta Studio */}
-                            <div className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
                                     <img
                                         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
@@ -847,6 +883,7 @@ export default function Welcome() {
                 {/* 6. FAQ (Tanya Jawab) */}
                 <section
                     id="faq"
+                    data-reveal
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
                     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -928,7 +965,7 @@ export default function Welcome() {
             >
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center">
                     {/* Contact invitation headline */}
-                    <div className="mb-8 max-w-lg">
+                    <div data-reveal className="mb-8 max-w-lg">
                         <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-[#F5F2EB]">
                             Punya rencana membuat atau memperbaiki website?
                         </h2>
@@ -938,7 +975,7 @@ export default function Welcome() {
                     </div>
 
                     {/* Circular Action Icons (WhatsApp, Instagram, Email, LinkedIn, GitHub) */}
-                    <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                    <div data-reveal data-reveal-delay="100" className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                         <a
                             href={WA_URL}
                             target="_blank"

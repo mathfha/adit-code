@@ -12,3 +12,18 @@
     --font-mono:
         Consolas, 'Courier New', monospace;
 }
+
+/* Subtle Scroll Reveal Animation */
+@media (prefers-reduced-motion: no-preference) {
+    .reveal-init {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 650ms cubic-bezier(0.16, 1, 0.3, 1), transform 650ms cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+    }
+
+    .reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
