@@ -413,7 +413,7 @@ export default function Welcome() {
                                 data-reveal-delay="0"
                                 className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
                             >
-                                <div className="p-6 sm:p-7">
+                                <div className="flex flex-1 flex-col p-6 sm:p-7">
                                     <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                         Untuk Penjualan &amp; Promosi
                                     </span>
@@ -431,7 +431,7 @@ export default function Welcome() {
                                     </p>
 
                                     {/* Yang Anda Dapatkan */}
-                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32] flex-1">
                                         <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
                                             Yang Anda dapatkan:
                                         </p>
@@ -456,19 +456,24 @@ export default function Welcome() {
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
                                                 <span>Loading cepat dan ringan saat dibuka calon pelanggan tanpa hambatan</span>
                                             </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                                <span>Bantuan penataan kata-kata promosi agar lebih meyakinkan pembeli</span>
+                                            </li>
                                         </ul>
-                                    </div>
-
-                                    {/* Cocok Untuk */}
-                                    <div className="mt-5 rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
-                                        <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Cocok untuk:
-                                        </span>{' '}
-                                        Produk baru, jualan online, promosi jasa, dan penawaran khusus.
                                     </div>
                                 </div>
 
-                                <div className="px-6 pb-6 pt-0">
+                                {/* Bagian Bawah Sejajar: Cocok Untuk & Tombol CTA */}
+                                <div className="space-y-4 px-6 pb-6 pt-0">
+                                    <div className="flex min-h-[64px] items-center rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                        <p>
+                                            <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                                Cocok untuk:
+                                            </span>{' '}
+                                            Produk baru, jualan online, promosi jasa, dan penawaran khusus.
+                                        </p>
+                                    </div>
                                     <a
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Landing%20Page."
                                         target="_blank"
@@ -487,7 +492,7 @@ export default function Welcome() {
                                 data-reveal-delay="100"
                                 className="flex flex-col justify-between rounded-xl border border-[#2563EB]/40 bg-white shadow-xs transition-all hover:border-[#2563EB] hover:shadow-md dark:border-[#3B82F6]/50 dark:bg-[#171A20] min-w-[275px] relative"
                             >
-                                <div className="p-6 sm:p-7">
+                                <div className="flex flex-1 flex-col p-6 sm:p-7">
                                     <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                         Untuk Bisnis &amp; Organisasi
                                     </span>
@@ -505,7 +510,7 @@ export default function Welcome() {
                                     </p>
 
                                     {/* Yang Anda Dapatkan */}
-                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32] flex-1">
                                         <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
                                             Yang Anda dapatkan:
                                         </p>
@@ -536,17 +541,18 @@ export default function Welcome() {
                                             </li>
                                         </ul>
                                     </div>
-
-                                    {/* Cocok Untuk */}
-                                    <div className="mt-5 rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
-                                        <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Cocok untuk:
-                                        </span>{' '}
-                                        UMKM, toko, kantor, sekolah, yayasan, dan penyedia jasa.
-                                    </div>
                                 </div>
 
-                                <div className="px-6 pb-6 pt-0">
+                                {/* Bagian Bawah Sejajar: Cocok Untuk & Tombol CTA */}
+                                <div className="space-y-4 px-6 pb-6 pt-0">
+                                    <div className="flex min-h-[64px] items-center rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                        <p>
+                                            <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                                Cocok untuk:
+                                            </span>{' '}
+                                            UMKM, toko, kantor, sekolah, yayasan, dan penyedia jasa.
+                                        </p>
+                                    </div>
                                     <a
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Company%20Profile."
                                         target="_blank"
@@ -565,7 +571,7 @@ export default function Welcome() {
                                 data-reveal-delay="200"
                                 className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
                             >
-                                <div className="p-6 sm:p-7">
+                                <div className="flex flex-1 flex-col p-6 sm:p-7">
                                     <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                         Solusi Digitalisasi Bisnis
                                     </span>
@@ -583,7 +589,7 @@ export default function Welcome() {
                                     </p>
 
                                     {/* Yang Dapat Dibuat */}
-                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32]">
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 dark:border-[#262A32] flex-1">
                                         <p className="text-xs font-semibold uppercase tracking-wider text-[#181B1F] dark:text-[#F5F2EB]">
                                             Yang dapat dibuat:
                                         </p>
@@ -614,17 +620,18 @@ export default function Welcome() {
                                             </li>
                                         </ul>
                                     </div>
-
-                                    {/* Cocok Untuk */}
-                                    <div className="mt-5 rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
-                                        <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Cocok untuk:
-                                        </span>{' '}
-                                        Usaha, toko, instansi, atau lembaga yang ingin pencatatan operasionalnya otomatis dan rapi.
-                                    </div>
                                 </div>
 
-                                <div className="px-6 pb-6 pt-0">
+                                {/* Bagian Bawah Sejajar: Cocok Untuk & Tombol CTA */}
+                                <div className="space-y-4 px-6 pb-6 pt-0">
+                                    <div className="flex min-h-[64px] items-center rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                        <p>
+                                            <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                                Cocok untuk:
+                                            </span>{' '}
+                                            Toko, UMKM, instansi, atau bisnis yang butuh pencatatan otomatis.
+                                        </p>
+                                    </div>
                                     <a
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20pembuatan%20Sistem%20Informasi."
                                         target="_blank"
