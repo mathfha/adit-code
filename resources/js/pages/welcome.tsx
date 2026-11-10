@@ -962,7 +962,7 @@ export default function Welcome() {
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
                                     <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        01
+                                        1
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Revisi Desain
@@ -976,7 +976,7 @@ export default function Welcome() {
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
                                     <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        02
+                                        2
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Domain Resmi
@@ -990,7 +990,7 @@ export default function Welcome() {
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
                                     <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        03
+                                        3
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Hosting &amp; Server
@@ -1004,7 +1004,7 @@ export default function Welcome() {
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
                                     <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        04
+                                        4
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Materi &amp; Konten
@@ -1018,7 +1018,7 @@ export default function Welcome() {
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
                                     <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        05
+                                        5
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Garansi Bug 30 Hari
@@ -1032,7 +1032,7 @@ export default function Welcome() {
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
                                     <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        06
+                                        6
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Waktu Pengerjaan
