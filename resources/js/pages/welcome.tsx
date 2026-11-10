@@ -385,7 +385,7 @@ export default function Welcome() {
                     </div>
                 </section>
 
-                {/* 2. TENTANG (Profil Aditya Rahman) */}
+                {/* 2. TENTANG (Profil Profesional) */}
                 <section
                     id="tentang"
                     data-reveal
@@ -393,11 +393,8 @@ export default function Welcome() {
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div className="max-w-2xl">
-                            <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
-                                Profil Developer
-                            </span>
-                            <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Tentang Aditya Rahman
+                            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
+                                Profil Profesional
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 Membantu pemilik usaha, UMKM, dan profesional memiliki website yang rapi, ringan diakses pelanggan, dan aman dari gangguan teknis.
@@ -411,7 +408,7 @@ export default function Welcome() {
                                     <img
                                         src="/images/profile-adit.png"
                                         alt="Aditya Rahman - Fullstack Developer at adit.code.id"
-                                        className="w-full h-auto object-contain drop-shadow-md"
+                                        className="w-full h-auto object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.18)] dark:drop-shadow-[0_25px_35px_rgba(0,0,0,0.65)]"
                                         loading="lazy"
                                     />
                                 </div>
@@ -545,12 +542,12 @@ export default function Welcome() {
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div data-reveal className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#EFECE5] dark:border-[#1E2229]">
                             <div className="max-w-xl">
-                                <span className="font-mono text-xs font-semibold text-[#2563EB] uppercase dark:text-[#60A5FA]">
+                                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                     Layanan Kami
-                                </span>
-                                <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                    Pilihan website sesuai kebutuhan usaha
                                 </h2>
+                                <p className="mt-2 text-base sm:text-lg font-medium text-[#2563EB] dark:text-[#60A5FA]">
+                                    Pilihan website sesuai kebutuhan usaha
+                                </p>
                             </div>
                             <p className="text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] max-w-md">
                                 Disesuaikan dengan skala dan tujuan usaha Anda, tanpa fitur
@@ -558,89 +555,146 @@ export default function Welcome() {
                             </p>
                         </div>
 
-                        {/* Services Cards */}
+                        {/* Services Cards (MUI BasicCard Structure: Card, CardContent, CardActions) */}
                         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
                             {/* Service 1 */}
-                            <div data-reveal data-reveal-delay="0" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div>
-                                    <span className="font-mono text-xs font-semibold text-[#2563EB] dark:text-[#60A5FA]">
+                            <div data-reveal data-reveal-delay="0" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
+                                <div className="p-6 sm:p-7">
+                                    <p className="text-xs font-mono font-medium text-[#5C6066] dark:text-[#A8A399] tracking-wider uppercase mb-1">
                                         LAYANAN 01
-                                    </span>
-                                    <h3 className="mt-3 text-lg font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                    </p>
+                                    <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Website profil usaha
                                     </h3>
-                                    <p className="mt-2.5 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Jelaskan usaha, layanan, lokasi, dan cara menghubungi Anda
-                                        dalam satu website yang mudah dibuka pelanggan.
+                                    <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
+                                        Cocok untuk UMKM, toko, klinik, dan jasa lokal
                                     </p>
-                                    <div className="mt-6 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
-                                        <div className="font-medium text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Contoh cakupan:
+                                    <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                        Jelaskan usaha, layanan, lokasi, dan cara menghubungi Anda dalam satu website yang mudah dibuka pelanggan.
+                                    </p>
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Profil usaha dan cerita ringkas</span>
                                         </div>
-                                        <div>&bull; Profil usaha dan cerita ringkas</div>
-                                        <div>&bull; Daftar layanan atau katalog produk</div>
-                                        <div>&bull; Informasi lokasi dan jam operasional</div>
-                                        <div>&bull; Tombol chat WhatsApp langsung</div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Daftar layanan atau katalog produk</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Informasi lokasi dan jam operasional</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Tombol chat WhatsApp langsung</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="mt-6 pt-4 border-t border-[#EFECE5] dark:border-[#262A32] text-xs font-mono text-[#5C6066] dark:text-[#A8A399]">
-                                    Cocok untuk UMKM, toko, klinik, dan jasa lokal
+                                <div className="px-6 pb-6 pt-0">
+                                    <a
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20dengan%20Website%20Profil%20Usaha."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
+                                    >
+                                        <span>Konsultasi Paket</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                    </a>
                                 </div>
                             </div>
 
                             {/* Service 2 */}
-                            <div data-reveal data-reveal-delay="100" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div>
-                                    <span className="font-mono text-xs font-semibold text-[#2563EB] dark:text-[#60A5FA]">
+                            <div data-reveal data-reveal-delay="100" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
+                                <div className="p-6 sm:p-7">
+                                    <p className="text-xs font-mono font-medium text-[#5C6066] dark:text-[#A8A399] tracking-wider uppercase mb-1">
                                         LAYANAN 02
-                                    </span>
-                                    <h3 className="mt-3 text-lg font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                    </p>
+                                    <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Website khusus
                                     </h3>
-                                    <p className="mt-2.5 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website dengan halaman dan fungsi yang disusun berdasarkan
-                                        kebutuhan spesifik proyek Anda.
+                                    <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
+                                        Fitur dan estimasi dibahas sebelum pengerjaan
                                     </p>
-                                    <div className="mt-6 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
-                                        <div className="font-medium text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Contoh cakupan:
+                                    <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                        Website dengan halaman dan fungsi yang disusun berdasarkan kebutuhan spesifik proyek Anda.
+                                    </p>
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Landing page kampanye promosi</span>
                                         </div>
-                                        <div>&bull; Landing page kampanye promosi</div>
-                                        <div>&bull; Portofolio atau katalog interaktif</div>
-                                        <div>&bull; Formulir reservasi atau pemesanan</div>
-                                        <div>&bull; Tampilan disesuaikan identitas brand</div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Portofolio atau katalog interaktif</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Formulir reservasi atau pemesanan</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Tampilan disesuaikan identitas brand</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="mt-6 pt-4 border-t border-[#EFECE5] dark:border-[#262A32] text-xs font-mono text-[#5C6066] dark:text-[#A8A399]">
-                                    Fitur dan estimasi dibahas sebelum pengerjaan
+                                <div className="px-6 pb-6 pt-0">
+                                    <a
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20dengan%20Website%20Khusus."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
+                                    >
+                                        <span>Konsultasi Paket</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                    </a>
                                 </div>
                             </div>
 
                             {/* Service 3 */}
-                            <div data-reveal data-reveal-delay="200" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white p-6 sm:p-7 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div>
-                                    <span className="font-mono text-xs font-semibold text-[#2563EB] dark:text-[#60A5FA]">
+                            <div data-reveal data-reveal-delay="200" className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]">
+                                <div className="p-6 sm:p-7">
+                                    <p className="text-xs font-mono font-medium text-[#5C6066] dark:text-[#A8A399] tracking-wider uppercase mb-1">
                                         LAYANAN 03
-                                    </span>
-                                    <h3 className="mt-3 text-lg font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
+                                    </p>
+                                    <h3 className="text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Sistem informasi sederhana
                                     </h3>
-                                    <p className="mt-2.5 text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                        Website dengan fitur untuk menyajikan atau mengelola informasi
-                                        internal sesuai alur yang disepakati.
+                                    <p className="mt-1 mb-3 text-xs font-medium text-[#2563EB] dark:text-[#60A5FA]">
+                                        Ruang lingkup dibicarakan di awal secara realistis
                                     </p>
-                                    <div className="mt-6 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
-                                        <div className="font-medium text-[#181B1F] dark:text-[#F5F2EB]">
-                                            Contoh cakupan:
+                                    <p className="text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                        Website dengan fitur untuk menyajikan atau mengelola informasi internal sesuai alur yang disepakati.
+                                    </p>
+                                    <div className="mt-5 border-t border-[#EFECE5] pt-4 text-xs text-[#5C6066] space-y-2 dark:border-[#262A32] dark:text-[#A8A399]">
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Dasbor ringkasan pencatatan operasional</span>
                                         </div>
-                                        <div>&bull; Dasbor ringkasan pencatatan operasional</div>
-                                        <div>&bull; Pengelolaan data inventaris atau pesanan</div>
-                                        <div>&bull; Ekspor data format CSV atau tabel</div>
-                                        <div>&bull; Pembagian akses pengguna internal</div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Pengelolaan data inventaris atau pesanan</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Ekspor data format CSV atau tabel</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
+                                            <span>Pembagian akses pengguna internal</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="mt-6 pt-4 border-t border-[#EFECE5] dark:border-[#262A32] text-xs font-mono text-[#5C6066] dark:text-[#A8A399]">
-                                    Ruang lingkup dibicarakan di awal secara realistis
+                                <div className="px-6 pb-6 pt-0">
+                                    <a
+                                        href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20dengan%20Sistem%20Informasi%20Sederhana."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#2563EB] hover:text-[#1D4ED8] dark:text-[#60A5FA] dark:hover:text-[#93C5FD] transition-colors"
+                                    >
+                                        <span>Konsultasi Paket</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
