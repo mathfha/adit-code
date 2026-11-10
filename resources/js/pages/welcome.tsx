@@ -83,7 +83,7 @@ export default function Welcome() {
         { href: '#portofolio', label: 'Portofolio' },
         { href: '#tentang', label: 'Tentang' },
         { href: '#ketentuan', label: 'Ketentuan' },
-        { href: '#faq', label: 'FAQ' },
+        { href: '#faq', label: 'Tanya Jawab' },
         { href: '#kontak', label: 'Kontak' },
     ];
 
@@ -1085,7 +1085,7 @@ export default function Welcome() {
                     </div>
                 </section>
 
-                {/* 6. FAQ (Tanya Jawab) */}
+                {/* 6. TANYA JAWAB */}
                 <section
                     id="faq"
                     data-reveal
@@ -1097,11 +1097,10 @@ export default function Welcome() {
                                 Tanya Jawab
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Pertanyaan seputar layanan website
+                                Pertanyaan yang Sering Diajukan
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                Jawaban praktis untuk hal-hal yang sering ditanyakan sebelum memulai
-                                pembuatan website.
+                                Jawaban praktis untuk hal-hal yang paling sering ditanyakan seputar layanan dan alur pembuatan website.
                             </p>
                         </div>
 
@@ -1259,22 +1258,8 @@ export default function Welcome() {
                         ))}
                     </nav>
 
-                    {/* Secondary Information & Back to Top */}
-                    <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 text-xs text-[#5C6066]">
-                        <span>kontak@adit.code.id</span>
-                        <span aria-hidden="true">&middot;</span>
-                        <span>Indonesia (WIB)</span>
-                        <span aria-hidden="true">&middot;</span>
-                        <a
-                            href="#beranda"
-                            className="transition-colors hover:text-[#A8A399]"
-                        >
-                            Kembali ke atas &uarr;
-                        </a>
-                    </div>
-
                     {/* Copyright */}
-                    <div className="mt-6 text-xs text-[#5C6066]">
+                    <div className="mt-8 text-xs text-[#5C6066]">
                         &copy; 2026 Adit Code. Hak cipta dilindungi.
                     </div>
                 </div>
