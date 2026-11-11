@@ -27,7 +27,7 @@ export function Services() {
                             key={service.title}
                             data-reveal
                             data-reveal-delay={service.delay}
-                            className={`flex flex-col justify-between rounded-2xl border bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:bg-[#171A20] min-w-[275px] ${
+                            className={`flex w-full min-w-0 flex-col justify-between rounded-2xl border bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:bg-[#171A20] ${
                                 service.highlighted
                                     ? 'border-[#2563EB]/40 hover:border-[#2563EB] dark:border-[#3B82F6]/50'
                                     : 'border-[#E5E0D6] dark:border-[#262A32]'
@@ -91,7 +91,7 @@ export function Services() {
                                     href={service.ctaUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#171A20]"
+                                    className="group inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-3 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#171A20]"
                                 >
                                     <svg
                                         className="h-3.5 w-3.5 shrink-0 fill-current"

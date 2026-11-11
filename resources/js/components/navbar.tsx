@@ -188,7 +188,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
                                 key={item.href}
                                 href={item.href}
                                 onClick={(e) => handleNavClick(e, item.href)}
-                                className="rounded px-2.5 py-2 hover:bg-white hover:text-[#2563EB] dark:hover:bg-[#171A20] dark:hover:text-[#60A5FA] transition-colors"
+                                className="flex min-h-[44px] items-center rounded-lg px-3 py-2.5 text-base font-medium hover:bg-white hover:text-[#2563EB] dark:hover:bg-[#171A20] dark:hover:text-[#60A5FA] active:scale-[0.98] transition-all"
                             >
                                 {item.label}
                             </a>
@@ -198,7 +198,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#2563EB] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#1D4ED8] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB] active:scale-[0.96] transition-transform"
+                            className="mt-2 flex min-h-[44px] items-center justify-center rounded-lg bg-[#2563EB] px-4 py-3 text-sm font-semibold text-white shadow-xs hover:bg-[#1D4ED8] dark:bg-[#2563EB] dark:text-white dark:hover:bg-[#1D4ED8] active:scale-[0.96] transition-transform"
                         >
                             Diskusikan via WhatsApp
                         </a>

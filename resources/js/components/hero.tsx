@@ -17,12 +17,12 @@ export function Hero() {
                     Mulai dari landing page promosi, profil usaha resmi, hingga sistem informasi data. Siap pakai lengkap dengan domain, hosting, dan tombol WhatsApp langsung tanpa repot urusan teknis.
                 </p>
 
-                <div className="mt-8 flex flex-wrap items-center gap-4">
+                <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                     <a
                         href={WA_HERO_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
+                        className="group inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                     >
                         <svg
                             className="h-4 w-4 shrink-0 fill-current"
@@ -49,7 +49,7 @@ export function Hero() {
                     </a>
                     <a
                         href="#layanan"
-                        className="group inline-flex items-center justify-center gap-2.5 rounded-lg border border-[#D6D0C4] bg-white/90 px-6 py-3 text-sm font-semibold text-[#181B1F] shadow-xs transition-all duration-200 hover:border-[#181B1F]/30 hover:bg-[#F2EFE8] hover:text-[#181B1F] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:border-[#2C313B] dark:bg-[#171A20]/90 dark:text-[#F5F2EB] dark:hover:border-[#4B5563] dark:hover:bg-[#20242D] dark:hover:text-white dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
+                        className="group inline-flex w-full sm:w-auto min-h-[48px] items-center justify-center gap-2.5 rounded-lg border border-[#D6D0C4] bg-white/90 px-6 py-3 text-sm font-semibold text-[#181B1F] shadow-xs transition-all duration-200 hover:border-[#181B1F]/30 hover:bg-[#F2EFE8] hover:text-[#181B1F] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:border-[#2C313B] dark:bg-[#171A20]/90 dark:text-[#F5F2EB] dark:hover:border-[#4B5563] dark:hover:bg-[#20242D] dark:hover:text-white dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                     >
                         <span>Lihat pilihan layanan</span>
                         <svg

@@ -65,16 +65,16 @@ export function About() {
                             </div>
 
                             {/* Tautan Profil (Icon LinkedIn, GitHub, Website) */}
-                            <div className="mt-4 flex items-center justify-center sm:justify-start gap-2.5">
+                            <div className="mt-4 flex items-center justify-center sm:justify-start gap-3">
                                 <a
                                     href={LINKEDIN_URL}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="LinkedIn Aditya Rahman"
-                                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
+                                    className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
                                 >
                                     <svg
-                                        className="h-4 w-4"
+                                        className="h-4.5 w-4.5"
                                         fill="currentColor"
                                         viewBox="0 0 24 24"
                                         aria-hidden="true"
@@ -87,10 +87,10 @@ export function About() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="GitHub Aditya Rahman"
-                                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
+                                    className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
                                 >
                                     <svg
-                                        className="h-4 w-4"
+                                        className="h-4.5 w-4.5"
                                         fill="currentColor"
                                         viewBox="0 0 24 24"
                                         aria-hidden="true"
@@ -107,10 +107,10 @@ export function About() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Website matfha.my.id"
-                                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
+                                    className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
                                 >
                                     <svg
-                                        className="h-4 w-4"
+                                        className="h-4.5 w-4.5"
                                         fill="none"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
