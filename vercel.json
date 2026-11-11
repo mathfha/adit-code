@@ -37,6 +37,15 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-    "LOG_CHANNEL": "stderr"
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie",
+    "CACHE_STORE": "array",
+    "APP_STORAGE": "/tmp/storage",
+    "APP_SERVICES_CACHE": "/tmp/storage/cache/services.php",
+    "APP_PACKAGES_CACHE": "/tmp/storage/cache/packages.php",
+    "APP_CONFIG_CACHE": "/tmp/storage/cache/config.php",
+    "APP_ROUTES_CACHE": "/tmp/storage/cache/routes.php",
+    "APP_EVENTS_CACHE": "/tmp/storage/cache/events.php",
+    "VIEW_COMPILED_PATH": "/tmp/storage/framework/views"
   }
 }
