@@ -1029,7 +1029,7 @@ export default function Welcome() {
                             </p>
                         </div>
 
-                        {/* Grid 6 Ketentuan Utama */}
+                        {/* Grid 5 Ketentuan Utama */}
                         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
@@ -1041,7 +1041,7 @@ export default function Welcome() {
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Termasuk 2 kali revisi desain per proyek pada tahap rancangan dan pembuatan. Penambahan fitur baru di luar ruang lingkup awal akan dibahas terpisah agar timeline proyek tetap terjaga.
+                                    Landing Page 3 kali, Company Profile 5 kali, Sistem Informasi 7 kali. Fitur baru di luar kesepakatan dibahas terpisah.
                                 </p>
                             </div>
 
@@ -1055,7 +1055,7 @@ export default function Welcome() {
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Sudah termasuk bantuan pendaftaran dan pengaturan nama domain resmi untuk tahun pertama, langsung disambungkan hingga website aktif dan siap diakses.
+                                    Biaya domain tahun pertama sudah termasuk. Saya bantu daftar dan sambungkan sampai website aktif.
                                 </p>
                             </div>
 
@@ -1069,7 +1069,7 @@ export default function Welcome() {
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Sudah termasuk ruang penyimpanan website (hosting) yang cepat, stabil, dan sertifikat keamanan SSL gratis (HTTPS) untuk tahun pertama pengerjaan.
+                                    Hosting dan SSL (HTTPS) tahun pertama sudah termasuk, dioptimasi supaya cepat dibuka.
                                 </p>
                             </div>
 
@@ -1083,7 +1083,7 @@ export default function Welcome() {
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Foto, logo, dan rincian informasi dasar disediakan oleh klien. Saya akan membantu merapikan susunan tulisan (copywriting) agar nyaman dibaca dan meyakinkan pelanggan.
+                                    Foto, logo, dan informasi dasar dari kamu. Saya bantu merapikan tulisannya supaya enak dibaca.
                                 </p>
                             </div>
 
@@ -1093,25 +1093,11 @@ export default function Welcome() {
                                         5
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
-                                        Garansi Bug 30 Hari
-                                    </h3>
-                                </div>
-                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Setiap website mendapatkan garansi perbaikan kendala teknis (bug) selama 30 hari gratis setelah serah terima proyek. Dukungan pemeliharaan berkala dapat dilanjutkan bila diperlukan.
-                                </p>
-                            </div>
-
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                        6
-                                    </span>
-                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
                                         Waktu Pengerjaan
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Estimasi pengerjaan: Landing Page 3-5 hari kerja, Company Profile 1-2 minggu, dan Sistem Informasi 2-4 minggu, terhitung sejak materi lengkap diterima.
+                                    Landing Page 3-5 hari kerja, Company Profile 1-2 minggu, Sistem Informasi 2-4 minggu, dihitung sejak materi lengkap.
                                 </p>
                             </div>
                         </div>
