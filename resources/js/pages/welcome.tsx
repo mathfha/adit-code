@@ -451,11 +451,11 @@ export default function Welcome() {
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div data-reveal className="max-w-2xl">
-                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                Pilihan Layanan
+                            <span className="text-xs sm:text-[13px] font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                Solusi Digital
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Layanan Pembuatan Website
+                                Pilihan Paket Website Usaha
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 Pilihan paket website yang dirancang sesuai kebutuhan usaha Anda, sudah termasuk nama domain dan hosting siap pakai.
@@ -750,11 +750,11 @@ export default function Welcome() {
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div data-reveal className="max-w-2xl">
-                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                Portofolio Karya
+                            <span className="text-xs sm:text-[13px] font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                Portofolio
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Contoh Rancangan Website
+                                Hasil Kerja &amp; Proyek Pilihan
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 Kumpulan contoh tampilan website nyata untuk memberikan inspirasi dan solusi yang tepat bagi kebutuhan usaha Anda.
@@ -893,11 +893,11 @@ export default function Welcome() {
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div data-reveal className="max-w-2xl">
-                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                Tentang Pengembang
+                            <span className="text-xs sm:text-[13px] font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                Tentang Saya
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Profil Profesional
+                                Partner Pengembangan Website Anda
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 Membantu pemilik usaha, UMKM, dan profesional memiliki website yang rapi, ringan diakses pelanggan, dan aman dari gangguan teknis.
@@ -1045,11 +1045,11 @@ export default function Welcome() {
                 >
                     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div data-reveal className="max-w-2xl">
-                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                Standar Kerja Sama
+                            <span className="text-xs sm:text-[13px] font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                Komitmen Kerja Sama
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Ketentuan Layanan
+                                Ketentuan &amp; Jaminan Layanan
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 Transparansi ruang lingkup, jadwal pengerjaan, dan jaminan teknis untuk menjaga kepastian hasil kerja serta kenyamanan bersama.
@@ -1191,9 +1191,9 @@ export default function Welcome() {
                     className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
                 >
                     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                        <div className="max-w-2xl">
-                            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
-                                Tanya Jawab
+                        <div data-reveal className="max-w-2xl">
+                            <span className="text-xs sm:text-[13px] font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
+                                Informasi Praktis
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                 Pertanyaan yang Sering Diajukan
