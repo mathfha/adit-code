@@ -1,5 +1,5 @@
 import React from 'react';
-import { WA_URL } from '../data/content';
+import { WA_HERO_URL } from '../data/content';
 
 export function Hero() {
     return (
@@ -19,7 +19,7 @@ export function Hero() {
 
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                     <a
-                        href={WA_URL}
+                        href={WA_HERO_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"

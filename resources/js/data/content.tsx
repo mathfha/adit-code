@@ -1,7 +1,20 @@
 import React from 'react';
 
-export const WA_URL =
-    'https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20website.';
+const WA_PHONE = '6281256700457';
+
+export const WA_HERO_URL = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+    'Halo Mas Adit, saya lihat website adit.code.id dan mau konsultasi rencana website untuk usaha saya.',
+)}`;
+
+export const WA_FLOATING_URL = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+    'Halo Mas Adit, saya mau tanya-tanya seputar jasa pembuatan website.',
+)}`;
+
+export const WA_FOOTER_URL = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+    'Halo Mas Adit, saya ada rencana bikin/perbaiki website dan mau bahas ruang lingkup serta biayanya.',
+)}`;
+
+export const WA_URL = WA_FLOATING_URL;
 export const IG_URL = 'https://www.instagram.com/adit.code.id/';
 export const EMAIL_URL = 'mailto:adit.rwet@gmail.com';
 export const LINKEDIN_URL = 'https://linkedin.com/in/aditya-rahman-680938267';
@@ -51,8 +64,9 @@ export const SERVICES: ServiceItem[] = [
             'Bantuan penataan kata-kata promosi agar lebih meyakinkan pembeli',
         ],
         suitedFor: 'Produk baru, jualan online, promosi jasa, dan penawaran khusus.',
-        ctaUrl:
-            'https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Landing%20Page.',
+        ctaUrl: `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+            'Halo Mas Adit, saya mau tanya estimasi biaya dan waktu pengerjaan untuk Landing Page.',
+        )}`,
         delay: '0',
         highlighted: false,
     },
@@ -71,8 +85,9 @@ export const SERVICES: ServiceItem[] = [
             'Dibantu agar nama usaha Anda mudah dicari di pencarian Google',
         ],
         suitedFor: 'UMKM, toko, kantor, sekolah, yayasan, dan penyedia jasa.',
-        ctaUrl:
-            'https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Company%20Profile.',
+        ctaUrl: `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+            'Halo Mas Adit, saya tertarik buat website Company Profile untuk profil usaha saya. Boleh info rincian biayanya?',
+        )}`,
         delay: '100',
         highlighted: true,
     },
@@ -91,8 +106,9 @@ export const SERVICES: ServiceItem[] = [
             'Fitur bisa disesuaikan dengan alur kerja dan kebiasaan usaha Anda',
         ],
         suitedFor: 'Toko, UMKM, instansi, atau bisnis yang butuh pencatatan otomatis.',
-        ctaUrl:
-            'https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20pembuatan%20Sistem%20Informasi.',
+        ctaUrl: `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+            'Halo Mas Adit, saya mau diskusi kebutuhan pembuatan Sistem Informasi / Web App untuk operasional usaha saya.',
+        )}`,
         delay: '200',
         highlighted: false,
     },

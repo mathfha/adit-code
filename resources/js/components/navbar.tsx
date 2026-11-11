@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NAV_ITEMS, WA_URL } from '../data/content';
+import { NAV_ITEMS, WA_HERO_URL } from '../data/content';
 import { cn } from '../lib/utils';
 
 interface NavbarProps {
@@ -179,7 +179,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
                             </a>
                         ))}
                         <a
-                            href={WA_URL}
+                            href={WA_HERO_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { EMAIL_URL, IG_URL, NAV_ITEMS, WA_URL } from '../data/content';
+import { EMAIL_URL, IG_URL, NAV_ITEMS, WA_FOOTER_URL } from '../data/content';
 
 export function Footer() {
     return (
@@ -28,7 +28,7 @@ export function Footer() {
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         <a
-                            href={WA_URL}
+                            href={WA_FOOTER_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Hubungi via WhatsApp (+62 812-5670-0457)"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { WA_URL } from '../data/content';
+import { WA_FLOATING_URL } from '../data/content';
 
 export function FloatingWhatsApp() {
     return (
@@ -8,7 +8,7 @@ export function FloatingWhatsApp() {
             className="fixed bottom-5 right-5 z-30"
         >
             <a
-                href={WA_URL}
+                href={WA_FLOATING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Hubungi Adit lewat WhatsApp"
