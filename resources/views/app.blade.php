@@ -23,10 +23,10 @@
         <meta property="og:type" content="website">
         <meta property="og:locale" content="id_ID">
         <meta property="og:site_name" content="Adit Code">
-        <meta property="og:title" content="Jasa Pembuatan Website UMKM - Adit Code">
+        <meta property="og:title" content="Jasa Website Usaha &amp; Profesional - Adit Code">
         <meta property="og:description" content="Adit Code membantu UMKM dan profesional membuat website company profile, website UMKM, dan sistem informasi sederhana. Diskusikan kebutuhan website Anda.">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Jasa Pembuatan Website UMKM - Adit Code">
+        <meta name="twitter:title" content="Jasa Website Usaha &amp; Profesional - Adit Code">
         <meta name="twitter:description" content="Adit Code membantu UMKM dan profesional membuat website company profile, website UMKM, dan sistem informasi sederhana. Diskusikan kebutuhan website Anda.">
         <meta name="twitter:image:alt" content="Adit Code, huruf A redup, teks code, dan aksen teal">
 
@@ -35,7 +35,7 @@
         @viteReactRefresh
         @vite(['resources/css/app.css', 'resources/js/app.tsx', "resources/js/pages/{$page['component']}.tsx"])
         <x-inertia::head>
-            <title>Jasa Pembuatan Website UMKM - Adit Code</title>
+            <title>Jasa Website Usaha &amp; Profesional - Adit Code</title>
         </x-inertia::head>
 
         @php

@@ -70,7 +70,7 @@ export default function Welcome() {
     return (
         <div className="min-h-screen bg-[#F8F6F2] text-[#181B1F] selection:bg-[#DBEAFE] selection:text-[#1D4ED8] transition-colors duration-150 dark:bg-[#0F1115] dark:text-[#F5F2EB] dark:selection:bg-[#1E3A8A] dark:selection:text-[#93C5FD]">
             <Head>
-                <title>Adit Code | Jasa Pembuatan Website Usaha dan Profesional</title>
+                <title>Jasa Website Usaha &amp; Profesional</title>
                 <meta
                     name="description"
                     content="Saya membantu usaha kecil dan profesional membuat website profil, website khusus, dan sistem informasi sederhana."
