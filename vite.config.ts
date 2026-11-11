@@ -30,6 +30,8 @@ export default defineConfig({
     ]),
     server: {
         host: '0.0.0.0',
+        origin: 'http://192.168.18.50:5173',
+        cors: true,
         watch: {
             ignored: [
                 '**/.agents/**',
