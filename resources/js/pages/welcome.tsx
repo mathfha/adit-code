@@ -360,14 +360,11 @@ export default function Welcome() {
                 >
                     <div className="max-w-3xl">
                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-[#181B1F] dark:text-[#F5F2EB] leading-[1.18]">
-                            Website yang membantu usaha Anda tampil jelas di internet.
+                            Jasa Pembuatan Website Profesional untuk Berbagai Kebutuhan.
                         </h1>
 
                         <p className="mt-5 text-base sm:text-lg text-[#5C6066] dark:text-[#A8A399] leading-relaxed max-w-2xl">
-                            Saya membantu UMKM dan profesional menyiapkan website sesuai
-                            kebutuhan, dari profil usaha hingga fitur khusus. Fokus pada
-                            kemudahan akses pengunjung, tampilan rapi di ponsel, dan jalur
-                            kontak yang mudah dihubungi.
+                            Saya menyediakan layanan pembuatan website untuk bisnis, profesional, organisasi, maupun individu. Mulai dari website profil, landing page, hingga pengembangan fitur khusus. Setiap website dirancang dengan tampilan modern, responsif di berbagai perangkat, dan pengalaman pengguna yang optimal.
                         </p>
 
                         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -377,7 +374,7 @@ export default function Welcome() {
                                 rel="noopener noreferrer"
                                 className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
                             >
-                                <span>Diskusikan kebutuhan website</span>
+                                <span>Konsultasi Proyek</span>
                                 <svg
                                     className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
                                     fill="none"
