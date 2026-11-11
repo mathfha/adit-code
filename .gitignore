@@ -28,6 +28,7 @@ yarn-error.log
 /.zed
 /.agents
 /agent
+/.clean
 /.amp
 /.claude
 /.codex
