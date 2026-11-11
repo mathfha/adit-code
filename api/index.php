@@ -1,5 +1,9 @@
 <?php
 
+putenv('VERCEL=1');
+$_ENV['VERCEL'] = '1';
+$_SERVER['VERCEL'] = '1';
+
 $storageDir = '/tmp/storage';
 $dirs = [
     $storageDir . '/framework/views',
