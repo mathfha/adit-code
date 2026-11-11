@@ -5,7 +5,7 @@ export function Portfolio() {
     return (
         <section
             id="portofolio"
-            className="border-t border-[#E5E0D6] py-16 sm:py-24 dark:border-[#262A32] scroll-mt-16"
+            className="py-16 sm:py-24 scroll-mt-16"
         >
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 <div data-reveal className="max-w-2xl">
