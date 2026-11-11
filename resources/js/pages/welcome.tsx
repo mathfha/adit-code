@@ -146,7 +146,7 @@ export default function Welcome() {
         },
         {
             q: 'Apakah saya harus sudah membeli domain dan hosting sendiri?',
-            a: 'Tidak perlu repot. Seluruh paket layanan sudah termasuk nama domain resmi (.com, .id, dll) dan ruang hosting siap pakai untuk tahun pertama. Anda cukup menyiapkan materi atau cerita usaha.',
+            a: 'Tidak perlu repot. Seluruh paket layanan sudah termasuk nama domain resmi dan ruang hosting siap pakai untuk tahun pertama. Anda cukup menyiapkan materi atau cerita usaha.',
         },
         {
             q: 'Berapa lama proses pengerjaan website sampai siap digunakan?',
@@ -468,7 +468,7 @@ export default function Welcome() {
                                         <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Sudah termasuk nama domain (.com / .id) dan hosting siap pakai</span>
+                                                <span>Sudah termasuk nama domain dan hosting siap pakai</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
@@ -560,7 +560,7 @@ export default function Welcome() {
                                         <ul className="mt-3 space-y-2 text-xs text-[#5C6066] dark:text-[#A8A399]">
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
-                                                <span>Sudah termasuk nama domain (.com / .id) dan hosting siap pakai</span>
+                                                <span>Sudah termasuk nama domain dan hosting siap pakai</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <span className="text-[#2563EB] dark:text-[#60A5FA]">•</span>
@@ -1055,7 +1055,7 @@ export default function Welcome() {
                                     </h3>
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                    Sudah termasuk bantuan pendaftaran dan pengaturan nama domain resmi (.com, .id, dll) untuk tahun pertama, langsung disambungkan hingga website aktif dan siap diakses.
+                                    Sudah termasuk bantuan pendaftaran dan pengaturan nama domain resmi untuk tahun pertama, langsung disambungkan hingga website aktif dan siap diakses.
                                 </p>
                             </div>
 
