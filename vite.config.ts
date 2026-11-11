@@ -1,3 +1,4 @@
+import { execSync } from 'node:child_process';
 import os from 'os';
 import inertia from '@inertiajs/vite';
 import { wayfinder } from '@laravel/vite-plugin-wayfinder';
@@ -7,6 +8,18 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import { defineConfig, lazyPlugins } from 'vite-plus';
+
+function canRunPhp(): boolean {
+    if (process.env.VERCEL || process.env.NOW_BUILDER) {
+        return false;
+    }
+    try {
+        execSync('php -v', { stdio: 'ignore' });
+        return true;
+    } catch {
+        return false;
+    }
+}
 
 function getDevServerOrigin(): string | undefined {
     if (process.env.VITE_DEV_SERVER_URL) {
@@ -51,9 +64,7 @@ export default defineConfig({
             presets: [reactCompilerPreset()],
         }),
         tailwindcss(),
-        wayfinder({
-            formVariants: true,
-        }),
+        ...(canRunPhp() ? [wayfinder({ formVariants: true })] : []),
     ]),
     server: {
         host: '0.0.0.0',
