@@ -1,13 +1,15 @@
 import { Head } from '@inertiajs/react';
 import { useEffect, useState } from 'react';
-
-const WA_URL =
-    'https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20website.';
-const IG_URL = 'https://www.instagram.com/adit.code.id/';
-const EMAIL_URL = 'mailto:adit.rwet@gmail.com';
-const LINKEDIN_URL = 'https://linkedin.com/in/aditya-rahman-680938267';
-const GITHUB_URL = 'https://github.com/mathfha';
-const SITE_URL = 'https://matfha.my.id';
+import {
+    EMAIL_URL,
+    FAQ_ITEMS as faqItems,
+    GITHUB_URL,
+    IG_URL,
+    LINKEDIN_URL,
+    NAV_ITEMS as navItems,
+    SITE_URL,
+    WA_URL,
+} from '../data/content';
 
 export default function Welcome() {
     const [isDark, setIsDark] = useState(false);
@@ -76,91 +78,6 @@ export default function Welcome() {
 
         return () => observer.disconnect();
     }, []);
-
-    const navItems = [
-        { href: '#beranda', label: 'Beranda' },
-        { href: '#layanan', label: 'Layanan' },
-        { href: '#portofolio', label: 'Portofolio' },
-        { href: '#tentang', label: 'Tentang' },
-        { href: '#ketentuan', label: 'Ketentuan' },
-        { href: '#faq', label: 'Tanya Jawab' },
-        { href: '#kontak', label: 'Kontak' },
-    ];
-
-    const faqItems: { q: string; a: React.ReactNode }[] = [
-        {
-            q: 'Bagaimana alur pengerjaan website dari awal sampai selesai?',
-            a: (
-                <div className="space-y-3.5 pt-1">
-                    <p className="text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
-                        Alur pengerjaan di Adit Code dirancang jelas, transparan, dan bertahap:
-                    </p>
-                    <div className="space-y-3">
-                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
-                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
-                                01 Konsultasi
-                            </span>
-                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                Ceritakan masalah dan kebutuhan usahamu. Saya bantu cari solusi yang pas.
-                            </p>
-                        </div>
-                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
-                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
-                                02 Deal
-                            </span>
-                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                Kita sepakati ruang lingkup, harga, dan jadwal. Pengerjaan dimulai setelah DP.
-                            </p>
-                        </div>
-                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
-                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
-                                03 Planning
-                            </span>
-                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                Kita rancang isi halaman, struktur, dan tampilan sebelum mulai dibangun.
-                            </p>
-                        </div>
-                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
-                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
-                                04 Pembuatan
-                            </span>
-                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                Website dibangun sesuai kesepakatan. Progres dikabari lewat WhatsApp, dan revisi sudah termasuk.
-                            </p>
-                        </div>
-                        <div className="border-l-2 border-[#2563EB] pl-3.5 dark:border-[#60A5FA]">
-                            <span className="font-mono text-xs font-bold text-[#2563EB] dark:text-[#60A5FA]">
-                                05 Serah terima
-                            </span>
-                            <p className="mt-0.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399]">
-                                Pengujian akhir, domain disambungkan, lalu kamu menerima akses dan panduan singkat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            q: 'Apa saja yang perlu saya siapkan sebelum pembuatan website dimulai?',
-            a: 'Cukup siapkan cerita singkat profil usaha, daftar layanan atau produk, dan kontak yang ingin ditampilkan. Jika materi belum tersusun rapi, saya akan membantu merapikan struktur tulisan dan alur informasinya saat diskusi awal.',
-        },
-        {
-            q: 'Apakah saya harus sudah membeli domain dan hosting sendiri?',
-            a: 'Tidak perlu repot. Seluruh paket layanan sudah termasuk nama domain resmi dan ruang hosting siap pakai untuk tahun pertama. Anda cukup menyiapkan materi atau cerita usaha.',
-        },
-        {
-            q: 'Berapa lama proses pengerjaan website sampai siap digunakan?',
-            a: 'Untuk website profil usaha satu halaman umumnya memakan waktu sekitar 1 sampai 2 minggu setelah materi disepakati. Jika ada kebutuhan fitur khusus atau alur tertentu, estimasi waktu pasti akan kita sepakati bersama sebelum pengerjaan dimulai.',
-        },
-        {
-            q: 'Bagaimana jika di kemudian hari ada informasi atau menu yang perlu diperbarui?',
-            a: 'Setiap serah terima proyek dilengkapi panduan dasar pengelolaan. Untuk pembaruan berkala atau penambahan fitur di kemudian hari, Anda dapat menghubungi saya kembali untuk penyesuaian ruang lingkup pengerjaan.',
-        },
-        {
-            q: 'Apakah tampilan website dipastikan rapi saat dibuka pelanggan lewat HP?',
-            a: 'Ya. Sebagian besar pengunjung membuka website dari ponsel, sehingga setiap halaman diuji langsung pada berbagai ukuran layar agar teks mudah dibaca, tombol nyaman ditekan, dan waktu muat tetap ringan.',
-        },
-    ];
 
     return (
         <div className="min-h-screen bg-[#F8F6F2] text-[#181B1F] selection:bg-[#DBEAFE] selection:text-[#1D4ED8] transition-colors duration-150 dark:bg-[#0F1115] dark:text-[#F5F2EB] dark:selection:bg-[#1E3A8A] dark:selection:text-[#93C5FD]">
