@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "skills": {
+    "clean-code": {
+      "source": "btseee/clean-code-skills",
+      "sourceType": "github",
+      "skillPath": "skills/clean-code/SKILL.md",
+      "computedHash": "9995da503eedf0dca762f1ea1f4f5cb812a05e95d6a524f6a57ac8c2fd853eae"
+    },
+    "configure-nightwatch": {
+      "source": "laravel/agent-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "laravel-nightwatch/skills/configure-nightwatch/SKILL.md",
+      "computedHash": "095a0d33b8b5c6193724889abd27aed61fe8e032fd5b85e7b6af5328cf941323"
+    },
+    "deploying-to-cloud": {
+      "source": "laravel/agent-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "laravel-cloud/skills/deploying-to-cloud/SKILL.md",
+      "computedHash": "035a854187f4b25337eb22ab347a212f5222197f0052df5980fafa746462d6a1"
+    },
+    "starter-kit-upgrade": {
+      "source": "laravel/agent-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "laravel/skills/starter-kit-upgrade/SKILL.md",
+      "computedHash": "afd2b836cf8b0ca1cb6add3b8886f634bf9a5f7c520244be13857094e9bc89cd"
+    }
+  }
+}
