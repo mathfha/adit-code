@@ -222,44 +222,77 @@ export default function Welcome() {
                         <button
                             type="button"
                             onClick={toggleTheme}
+                            role="switch"
+                            aria-checked={isDark}
                             aria-label={
                                 isDark
                                     ? 'Beralih ke mode terang'
                                     : 'Beralih ke mode gelap'
                             }
-                            className="flex h-10 w-10 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-colors hover:bg-[#EFECE5] hover:text-[#181B1F] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:bg-[#20242D] dark:hover:text-[#F5F2EB] dark:focus:ring-[#60A5FA]"
+                            className="relative inline-flex h-10 w-[72px] shrink-0 cursor-pointer items-center rounded-full border border-[#E5E0D6] bg-[#EFECE5] p-1.5 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 dark:border-[#262A32] dark:bg-[#13151A] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
                         >
-                            {isDark ? (
+                            {/* Background track icons */}
+                            <span className="pointer-events-none absolute inset-0 flex items-center justify-between px-2.5">
+                                {/* Sun icon on left */}
                                 <svg
-                                    className="h-4 w-4"
+                                    className="h-3.5 w-3.5 text-[#D97706]/70 dark:text-[#A8A399]/40"
                                     fill="none"
                                     stroke="currentColor"
+                                    strokeWidth="2"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
                                 >
+                                    <circle cx="12" cy="12" r="4" />
                                     <path
                                         strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                                        d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41m14.14-14.14l-1.41 1.41"
                                     />
                                 </svg>
-                            ) : (
+                                {/* Moon icon on right */}
                                 <svg
-                                    className="h-4 w-4"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
+                                    className="h-3.5 w-3.5 text-[#5C6066]/40 dark:text-[#60A5FA]/80"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
                                     aria-hidden="true"
                                 >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                                    />
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                                 </svg>
-                            )}
+                            </span>
+
+                            {/* Sliding Thumb */}
+                            <span
+                                className={`pointer-events-none relative flex h-7 w-7 transform items-center justify-center rounded-full shadow-md transition-transform duration-300 ease-out ${
+                                    isDark
+                                        ? 'translate-x-8 bg-[#20242D] text-[#60A5FA] shadow-black/40'
+                                        : 'translate-x-0 bg-white text-[#D97706] shadow-black/10'
+                                }`}
+                            >
+                                {isDark ? (
+                                    <svg
+                                        className="h-3.5 w-3.5"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                                    </svg>
+                                ) : (
+                                    <svg
+                                        className="h-4 w-4"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2.2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <circle cx="12" cy="12" r="4" />
+                                        <path
+                                            strokeLinecap="round"
+                                            d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41m14.14-14.14l-1.41 1.41"
+                                        />
+                                    </svg>
+                                )}
+                            </span>
                         </button>
 
                         <a
