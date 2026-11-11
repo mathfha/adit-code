@@ -1,3 +1,4 @@
+import os from 'os';
 import inertia from '@inertiajs/vite';
 import { wayfinder } from '@laravel/vite-plugin-wayfinder';
 import babel from '@rolldown/plugin-babel';
@@ -6,6 +7,32 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import { defineConfig, lazyPlugins } from 'vite-plus';
+
+function getDevServerOrigin(): string | undefined {
+    if (process.env.VITE_DEV_SERVER_URL) {
+        return process.env.VITE_DEV_SERVER_URL;
+    }
+
+    const interfaces = os.networkInterfaces();
+    for (const name of Object.keys(interfaces)) {
+        if (
+            name.startsWith('lo') ||
+            name.startsWith('br-') ||
+            name.startsWith('docker') ||
+            name.startsWith('veth')
+        ) {
+            continue;
+        }
+
+        for (const iface of interfaces[name] || []) {
+            if (iface.family === 'IPv4' && !iface.internal) {
+                return `http://${iface.address}:5173`;
+            }
+        }
+    }
+
+    return undefined;
+}
 
 export default defineConfig({
     plugins: lazyPlugins(() => [
@@ -30,7 +57,7 @@ export default defineConfig({
     ]),
     server: {
         host: '0.0.0.0',
-        origin: 'http://192.168.18.50:5173',
+        origin: getDevServerOrigin(),
         cors: true,
         watch: {
             ignored: [
