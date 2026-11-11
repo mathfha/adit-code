@@ -2,6 +2,19 @@ import React from 'react';
 import { EMAIL_URL, IG_URL, NAV_ITEMS, WA_FOOTER_URL } from '../data/content';
 
 export function Footer() {
+    const handleNavClick = (
+        e: React.MouseEvent<HTMLAnchorElement>,
+        href: string,
+    ) => {
+        if (href === '/') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (window.location.hash) {
+                history.replaceState(null, '', window.location.pathname);
+            }
+        }
+    };
+
     return (
         <footer
             id="kontak"
@@ -93,6 +106,7 @@ export function Footer() {
                         <span key={item.href} className="inline-flex items-center gap-4">
                             <a
                                 href={item.href}
+                                onClick={(e) => handleNavClick(e, item.href)}
                                 className="transition-colors hover:text-[#60A5FA] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#60A5FA] rounded px-1.5 py-0.5"
                             >
                                 {item.label}

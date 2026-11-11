@@ -13,8 +13,12 @@
         Consolas, 'Courier New', monospace;
 }
 
-/* Subtle Scroll Reveal Animation */
+/* Smooth Scrolling & Subtle Scroll Reveal Animation */
 @media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+
     .reveal-init {
         opacity: 0;
         transform: translateY(24px);

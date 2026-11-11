@@ -20,6 +20,20 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [mobileMenuOpen]);
 
+    const handleNavClick = (
+        e: React.MouseEvent<HTMLAnchorElement>,
+        href: string,
+    ) => {
+        if (href === '/') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (window.location.hash) {
+                history.replaceState(null, '', window.location.pathname);
+            }
+        }
+        setMobileMenuOpen(false);
+    };
+
     return (
         <header className="sticky top-0 z-40 w-full bg-[#F8F6F2]/95 backdrop-blur-sm dark:bg-[#0F1115]/95">
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-end md:justify-between px-4 sm:px-6 lg:px-8">
@@ -32,6 +46,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
                         <a
                             key={item.href}
                             href={item.href}
+                            onClick={(e) => handleNavClick(e, item.href)}
                             className="transition-colors hover:text-[#2563EB] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 rounded px-1.5 py-1 dark:hover:text-[#60A5FA] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                         >
                             {item.label}
@@ -172,7 +187,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
                             <a
                                 key={item.href}
                                 href={item.href}
-                                onClick={() => setMobileMenuOpen(false)}
+                                onClick={(e) => handleNavClick(e, item.href)}
                                 className="rounded px-2.5 py-2 hover:bg-white hover:text-[#2563EB] dark:hover:bg-[#171A20] dark:hover:text-[#60A5FA] transition-colors"
                             >
                                 {item.label}

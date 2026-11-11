@@ -27,7 +27,7 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-    { href: '#beranda', label: 'Beranda' },
+    { href: '/', label: 'Beranda' },
     { href: '#layanan', label: 'Layanan' },
     { href: '#portofolio', label: 'Portofolio' },
     { href: '#tentang', label: 'Tentang' },
