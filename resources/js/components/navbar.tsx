@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NAV_ITEMS, WA_URL } from '../data/content';
+import { cn } from '../lib/utils';
 
 interface NavbarProps {
     isDark: boolean;
@@ -82,11 +83,12 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
 
                         {/* Sliding Thumb */}
                         <span
-                            className={`pointer-events-none relative flex h-7 w-7 transform items-center justify-center rounded-full shadow-md transition-transform duration-300 ease-out ${
+                            className={cn(
+                                'pointer-events-none relative flex h-7 w-7 transform items-center justify-center rounded-full shadow-md transition-transform duration-300 ease-out',
                                 isDark
                                     ? 'translate-x-8 bg-[#20242D] text-[#60A5FA] shadow-black/40'
                                     : 'translate-x-0 bg-white text-[#D97706] shadow-black/10'
-                            }`}
+                            )}
                         >
                             {isDark ? (
                                 <svg
