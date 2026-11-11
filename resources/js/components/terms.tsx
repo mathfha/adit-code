@@ -25,18 +25,13 @@ export function Terms() {
                 <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {TERMS.map((term) => (
                         <div
-                            key={term.num}
+                            key={term.title}
                             className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]"
                         >
-                            <div className="flex items-center gap-2.5">
-                                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
-                                    {term.num}
-                                </span>
-                                <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
-                                    {term.title}
-                                </h3>
-                            </div>
-                            <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                            <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                {term.title}
+                            </h3>
+                            <p className="mt-2.5 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 {term.description}
                             </p>
                         </div>
