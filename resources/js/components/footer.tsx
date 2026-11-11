@@ -86,14 +86,14 @@ export function Footer() {
 
                 {/* Centered Navigation Links with middle dot separators */}
                 <nav
-                    className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs sm:text-sm text-[#A8A399]"
+                    className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs sm:text-sm font-medium text-[#CBD5E1]"
                     aria-label="Navigasi Footer"
                 >
                     {NAV_ITEMS.map((item, idx) => (
                         <span key={item.href} className="inline-flex items-center gap-4">
                             <a
                                 href={item.href}
-                                className="transition-colors hover:text-[#F5F2EB] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] rounded px-1.5 py-0.5"
+                                className="transition-colors hover:text-[#60A5FA] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#60A5FA] rounded px-1.5 py-0.5"
                             >
                                 {item.label}
                             </a>

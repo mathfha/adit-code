@@ -25,14 +25,14 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-end md:justify-between px-4 sm:px-6 lg:px-8">
                 {/* Desktop Navigation */}
                 <nav
-                    className="hidden md:flex items-center gap-6 text-sm text-[#5C6066] dark:text-[#A8A399]"
+                    className="hidden md:flex items-center gap-6 text-sm font-medium text-[#4A505A] dark:text-[#E2E8F0]"
                     aria-label="Navigasi Utama"
                 >
                     {NAV_ITEMS.map((item) => (
                         <a
                             key={item.href}
                             href={item.href}
-                            className="transition-colors hover:text-[#181B1F] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 rounded px-1.5 py-1 dark:hover:text-[#F5F2EB] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
+                            className="transition-colors hover:text-[#2563EB] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 rounded px-1.5 py-1 dark:hover:text-[#60A5FA] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                         >
                             {item.label}
                         </a>
@@ -165,7 +165,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
             {mobileMenuOpen && (
                 <div className="border-t border-[#E5E0D6] bg-[#F8F6F2] px-4 py-4 md:hidden dark:border-[#262A32] dark:bg-[#0F1115]">
                     <nav
-                        className="flex flex-col gap-3 text-sm text-[#5C6066] dark:text-[#A8A399]"
+                        className="flex flex-col gap-2 text-sm font-medium text-[#4A505A] dark:text-[#E2E8F0]"
                         aria-label="Navigasi Mobile"
                     >
                         {NAV_ITEMS.map((item) => (
@@ -173,7 +173,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
                                 key={item.href}
                                 href={item.href}
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="rounded px-2 py-2 hover:bg-white hover:text-[#181B1F] dark:hover:bg-[#171A20] dark:hover:text-[#F5F2EB]"
+                                className="rounded px-2.5 py-2 hover:bg-white hover:text-[#2563EB] dark:hover:bg-[#171A20] dark:hover:text-[#60A5FA] transition-colors"
                             >
                                 {item.label}
                             </a>
