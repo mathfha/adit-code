@@ -175,7 +175,7 @@ export default function Welcome() {
             {/* Skip to Content for Accessibility */}
             <a
                 href="#beranda"
-                className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#2563EB] focus:text-white focus:rounded focus:outline-none"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#2563EB] focus:text-white focus:rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
                 Langsung ke konten utama
             </a>
@@ -192,7 +192,7 @@ export default function Welcome() {
                             <a
                                 key={item.href}
                                 href={item.href}
-                                className="transition-colors hover:text-[#181B1F] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 rounded px-1.5 py-1 dark:hover:text-[#F5F2EB] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
+                                className="transition-colors hover:text-[#181B1F] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 rounded px-1.5 py-1 dark:hover:text-[#F5F2EB] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                             >
                                 {item.label}
                             </a>
@@ -211,7 +211,7 @@ export default function Welcome() {
                                     ? 'Beralih ke mode terang'
                                     : 'Beralih ke mode gelap'
                             }
-                            className="relative inline-flex h-10 w-[72px] shrink-0 cursor-pointer items-center rounded-full border border-[#E5E0D6] bg-[#EFECE5] p-1.5 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 dark:border-[#262A32] dark:bg-[#13151A] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
+                            className="relative inline-flex h-10 w-[72px] shrink-0 cursor-pointer items-center rounded-full border border-[#E5E0D6] bg-[#EFECE5] p-1.5 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 dark:border-[#262A32] dark:bg-[#13151A] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                         >
                             {/* Background track icons */}
                             <span className="pointer-events-none absolute inset-0 flex items-center justify-between px-2.5">
@@ -277,13 +277,13 @@ export default function Welcome() {
                             </span>
                         </button>
 
-                        {/* Mobile Menu Button */}
+                        {/* Mobile Menu Button (44px touch target) */}
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             aria-expanded={mobileMenuOpen}
                             aria-label="Buka menu navigasi"
-                            className="flex h-10 w-10 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] md:hidden hover:bg-[#EFECE5] hover:text-[#181B1F] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:bg-[#20242D] dark:hover:text-[#F5F2EB] dark:focus:ring-[#60A5FA]"
+                            className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] md:hidden hover:bg-[#EFECE5] hover:text-[#181B1F] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:bg-[#20242D] dark:hover:text-[#F5F2EB] dark:focus-visible:ring-[#60A5FA] active:scale-[0.96] transition-transform"
                         >
                             {mobileMenuOpen ? (
                                 <svg
@@ -342,7 +342,7 @@ export default function Welcome() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#2563EB] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#1D4ED8] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#2563EB] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#1D4ED8] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB] active:scale-[0.96] transition-transform"
                             >
                                 Diskusikan via WhatsApp
                             </a>
@@ -360,11 +360,11 @@ export default function Welcome() {
                 >
                     <div className="max-w-3xl">
                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-[#181B1F] dark:text-[#F5F2EB] leading-[1.18]">
-                            Jasa Pembuatan Website Profesional untuk Berbagai Kebutuhan.
+                            Bantu Usaha Anda Tampil Lebih Terpercaya dengan Website yang Rapi dan Cepat.
                         </h1>
 
                         <p className="mt-5 text-base sm:text-lg text-[#5C6066] dark:text-[#A8A399] leading-relaxed max-w-2xl">
-                            Saya menyediakan layanan pembuatan website untuk bisnis, profesional, organisasi, maupun individu. Mulai dari website profil, landing page, hingga pengembangan fitur khusus. Setiap website dirancang dengan tampilan modern, responsif di berbagai perangkat, dan pengalaman pengguna yang optimal.
+                            Mulai dari landing page promosi, profil usaha resmi, hingga sistem informasi data. Siap pakai lengkap dengan domain, hosting, dan tombol WhatsApp langsung tanpa repot urusan teknis.
                         </p>
 
                         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -372,7 +372,7 @@ export default function Welcome() {
                                 href={WA_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
+                                className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                             >
                                 <svg
                                     className="h-4 w-4 shrink-0 fill-current"
@@ -399,7 +399,7 @@ export default function Welcome() {
                             </a>
                             <a
                                 href="#layanan"
-                                className="group inline-flex items-center justify-center gap-2.5 rounded-lg border border-[#D6D0C4] bg-white/90 px-6 py-3 text-sm font-semibold text-[#181B1F] shadow-xs transition-all duration-200 hover:border-[#181B1F]/30 hover:bg-[#F2EFE8] hover:text-[#181B1F] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#F8F6F2] dark:border-[#2C313B] dark:bg-[#171A20]/90 dark:text-[#F5F2EB] dark:hover:border-[#4B5563] dark:hover:bg-[#20242D] dark:hover:text-white dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
+                                className="group inline-flex items-center justify-center gap-2.5 rounded-lg border border-[#D6D0C4] bg-white/90 px-6 py-3 text-sm font-semibold text-[#181B1F] shadow-xs transition-all duration-200 hover:border-[#181B1F]/30 hover:bg-[#F2EFE8] hover:text-[#181B1F] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F8F6F2] dark:border-[#2C313B] dark:bg-[#171A20]/90 dark:text-[#F5F2EB] dark:hover:border-[#4B5563] dark:hover:bg-[#20242D] dark:hover:text-white dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#0F1115]"
                             >
                                 <span>Lihat pilihan layanan</span>
                                 <svg
@@ -445,7 +445,7 @@ export default function Welcome() {
                             <div
                                 data-reveal
                                 data-reveal-delay="0"
-                                className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
+                                className="flex flex-col justify-between rounded-2xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
                             >
                                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                                     <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
@@ -454,7 +454,7 @@ export default function Welcome() {
                                     <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Landing Page
                                     </h3>
-                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-md bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
+                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-lg bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
                                         <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -500,7 +500,7 @@ export default function Welcome() {
 
                                 {/* Bagian Bawah Sejajar: Cocok Untuk & Tombol CTA */}
                                 <div className="space-y-4 px-6 pb-6 pt-0">
-                                    <div className="flex min-h-[64px] items-center rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                    <div className="flex min-h-[64px] items-center rounded-xl bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
                                         <p>
                                             <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
                                                 Cocok untuk:
@@ -512,7 +512,7 @@ export default function Welcome() {
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Landing%20Page."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8]"
+                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#171A20]"
                                     >
                                         <svg
                                             className="h-3.5 w-3.5 shrink-0 fill-current"
@@ -544,7 +544,7 @@ export default function Welcome() {
                             <div
                                 data-reveal
                                 data-reveal-delay="100"
-                                className="flex flex-col justify-between rounded-xl border border-[#2563EB]/40 bg-white shadow-xs transition-all hover:border-[#2563EB] hover:shadow-md dark:border-[#3B82F6]/50 dark:bg-[#171A20] min-w-[275px] relative"
+                                className="flex flex-col justify-between rounded-2xl border border-[#2563EB]/40 bg-white shadow-xs transition-all hover:border-[#2563EB] hover:shadow-md dark:border-[#3B82F6]/50 dark:bg-[#171A20] min-w-[275px] relative"
                             >
                                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                                     <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
@@ -553,7 +553,7 @@ export default function Welcome() {
                                     <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Company Profile
                                     </h3>
-                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-md bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
+                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-lg bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
                                         <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -599,7 +599,7 @@ export default function Welcome() {
 
                                 {/* Bagian Bawah Sejajar: Cocok Untuk & Tombol CTA */}
                                 <div className="space-y-4 px-6 pb-6 pt-0">
-                                    <div className="flex min-h-[64px] items-center rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                    <div className="flex min-h-[64px] items-center rounded-xl bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
                                         <p>
                                             <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
                                                 Cocok untuk:
@@ -611,7 +611,7 @@ export default function Welcome() {
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Company%20Profile."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8]"
+                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#171A20]"
                                     >
                                         <svg
                                             className="h-3.5 w-3.5 shrink-0 fill-current"
@@ -643,7 +643,7 @@ export default function Welcome() {
                             <div
                                 data-reveal
                                 data-reveal-delay="200"
-                                className="flex flex-col justify-between rounded-xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
+                                className="flex flex-col justify-between rounded-2xl border border-[#E5E0D6] bg-white shadow-xs transition-all hover:border-[#2563EB]/40 hover:shadow-md dark:border-[#262A32] dark:bg-[#171A20] min-w-[275px]"
                             >
                                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                                     <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
@@ -652,7 +652,7 @@ export default function Welcome() {
                                     <h3 className="mt-1.5 text-2xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
                                         Sistem Informasi
                                     </h3>
-                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-md bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
+                                    <div className="mt-2.5 inline-flex items-center gap-1.5 rounded-lg bg-[#EFF6FF] px-2.5 py-1 text-xs font-semibold text-[#1D4ED8] dark:bg-[#132038] dark:text-[#93C5FD]">
                                         <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -698,7 +698,7 @@ export default function Welcome() {
 
                                 {/* Bagian Bawah Sejajar: Cocok Untuk & Tombol CTA */}
                                 <div className="space-y-4 px-6 pb-6 pt-0">
-                                    <div className="flex min-h-[64px] items-center rounded-lg bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
+                                    <div className="flex min-h-[64px] items-center rounded-xl bg-[#F8F6F2] p-3 text-xs text-[#5C6066] dark:bg-[#0F1115] dark:text-[#A8A399]">
                                         <p>
                                             <span className="font-semibold text-[#181B1F] dark:text-[#F5F2EB]">
                                                 Cocok untuk:
@@ -710,7 +710,7 @@ export default function Welcome() {
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20pembuatan%20Sistem%20Informasi."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8]"
+                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:focus-visible:ring-[#60A5FA] dark:focus-visible:ring-offset-[#171A20]"
                                     >
                                         <svg
                                             className="h-3.5 w-3.5 shrink-0 fill-current"
@@ -755,14 +755,14 @@ export default function Welcome() {
                                 Hasil Kerja &amp; Proyek Pilihan
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                                Kumpulan contoh tampilan website nyata untuk memberikan inspirasi dan solusi yang tepat bagi kebutuhan usaha Anda.
+                                Contoh tampilan website nyata yang dirancang fokus pada kemudahan pengunjung memahami produk dan langsung menghubungi kontak Anda.
                             </p>
                         </div>
 
                         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                             {/* Proyek 1: Trip Green Island */}
-                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-2xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115] ring-1 ring-black/5 dark:ring-white/10">
                                     <img
                                         src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
                                         alt="Trip Green Island"
@@ -776,8 +776,8 @@ export default function Welcome() {
                                             <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                                 Website Company Profile
                                             </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
+                                            <span className="inline-flex items-center rounded-md border border-[#BFDBFE] bg-[#EFF6FF] px-2.5 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Konsep Proyek
                                             </span>
                                         </div>
                                         <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
@@ -791,8 +791,8 @@ export default function Welcome() {
                             </div>
 
                             {/* Proyek 2: Kopi Seduh Nusantara */}
-                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-2xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115] ring-1 ring-black/5 dark:ring-white/10">
                                     <img
                                         src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
                                         alt="Kopi Seduh Nusantara"
@@ -806,8 +806,8 @@ export default function Welcome() {
                                             <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                                 Website Profil &amp; Katalog
                                             </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
+                                            <span className="inline-flex items-center rounded-md border border-[#BFDBFE] bg-[#EFF6FF] px-2.5 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Konsep Proyek
                                             </span>
                                         </div>
                                         <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
@@ -821,8 +821,8 @@ export default function Welcome() {
                             </div>
 
                             {/* Proyek 3: Klinik Fisioterapi Sehat Mandiri */}
-                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                            <div data-reveal data-reveal-delay="0" className="group flex flex-col rounded-2xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115] ring-1 ring-black/5 dark:ring-white/10">
                                     <img
                                         src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
                                         alt="Klinik Fisioterapi Sehat Mandiri"
@@ -836,8 +836,8 @@ export default function Welcome() {
                                             <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                                 Website Layanan Kesehatan
                                             </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
+                                            <span className="inline-flex items-center rounded-md border border-[#BFDBFE] bg-[#EFF6FF] px-2.5 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Konsep Proyek
                                             </span>
                                         </div>
                                         <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
@@ -851,8 +851,8 @@ export default function Welcome() {
                             </div>
 
                             {/* Proyek 4: Graha Cipta Studio */}
-                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
-                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115]">
+                            <div data-reveal data-reveal-delay="100" className="group flex flex-col rounded-2xl border border-[#E5E0D6] bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#F8F6F2] dark:bg-[#0F1115] ring-1 ring-black/5 dark:ring-white/10">
                                     <img
                                         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
                                         alt="Graha Cipta Studio"
@@ -866,8 +866,8 @@ export default function Welcome() {
                                             <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                                 Website Portofolio Bisnis
                                             </span>
-                                            <span className="inline-flex items-center rounded border border-[#BFDBFE] bg-[#EFF6FF] px-2 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
-                                                Dummy
+                                            <span className="inline-flex items-center rounded-md border border-[#BFDBFE] bg-[#EFF6FF] px-2.5 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                                Konsep Proyek
                                             </span>
                                         </div>
                                         <h3 className="mt-3 text-lg sm:text-xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
@@ -895,7 +895,7 @@ export default function Welcome() {
                                 Tentang Saya
                             </span>
                             <h2 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]">
-                                Partner Pengembangan Website Anda
+                                Membangun Website yang Bekerja Nyata untuk Bisnis Anda
                             </h2>
                             <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                 Membantu pemilik usaha, UMKM, dan profesional memiliki website yang rapi, ringan diakses pelanggan, dan aman dari gangguan teknis.
@@ -952,7 +952,7 @@ export default function Welcome() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label="LinkedIn Aditya Rahman"
-                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-all hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
+                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
                                         >
                                             <svg
                                                 className="h-4 w-4"
@@ -968,7 +968,7 @@ export default function Welcome() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label="GitHub Aditya Rahman"
-                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-all hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
+                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
                                         >
                                             <svg
                                                 className="h-4 w-4"
@@ -988,7 +988,7 @@ export default function Welcome() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label="Website matfha.my.id"
-                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-all hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
+                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#E5E0D6] bg-white text-[#5C6066] transition-transform hover:border-[#2563EB] hover:bg-[#EFF6FF] hover:text-[#2563EB] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] dark:border-[#262A32] dark:bg-[#171A20] dark:text-[#A8A399] dark:hover:border-[#60A5FA] dark:hover:bg-[#132038] dark:hover:text-[#60A5FA]"
                                         >
                                             <svg
                                                 className="h-4 w-4"
@@ -1056,9 +1056,9 @@ export default function Welcome() {
 
                         {/* Grid 6 Ketentuan Utama */}
                         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
                                         1
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -1070,9 +1070,9 @@ export default function Welcome() {
                                 </p>
                             </div>
 
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
                                         2
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -1084,9 +1084,9 @@ export default function Welcome() {
                                 </p>
                             </div>
 
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
                                         3
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -1098,9 +1098,9 @@ export default function Welcome() {
                                 </p>
                             </div>
 
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
                                         4
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -1112,9 +1112,9 @@ export default function Welcome() {
                                 </p>
                             </div>
 
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
                                         5
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -1126,9 +1126,9 @@ export default function Welcome() {
                                 </p>
                             </div>
 
-                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                            <div className="rounded-2xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
                                         6
                                     </span>
                                     <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
@@ -1142,7 +1142,7 @@ export default function Welcome() {
                         </div>
 
                         {/* Catatan Khusus Sistem Informasi */}
-                        <div className="mt-8 rounded-xl border border-[#2563EB]/30 bg-[#EFF6FF]/60 p-6 dark:border-[#2563EB]/40 dark:bg-[#132038]/50">
+                        <div className="mt-8 rounded-2xl border border-[#2563EB]/30 bg-[#EFF6FF]/60 p-6 dark:border-[#2563EB]/40 dark:bg-[#132038]/50">
                             <h4 className="text-sm font-bold text-[#1D4ED8] dark:text-[#93C5FD] flex items-center gap-2">
                                 <svg
                                     className="h-4 w-4 shrink-0"
@@ -1207,7 +1207,7 @@ export default function Welcome() {
                                     key={idx}
                                     className="group py-5 transition-colors focus-within:outline-none"
                                 >
-                                    <summary className="flex cursor-pointer items-center justify-between text-left text-base font-semibold text-[#181B1F] transition-colors hover:text-[#2563EB] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] rounded dark:text-[#F5F2EB] dark:hover:text-[#60A5FA] dark:focus-visible:ring-[#60A5FA]">
+                                    <summary className="flex cursor-pointer items-center justify-between text-left text-base font-semibold text-[#181B1F] transition-colors hover:text-[#2563EB] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] rounded select-none dark:text-[#F5F2EB] dark:hover:text-[#60A5FA] dark:focus-visible:ring-[#60A5FA]">
                                         <span className="pr-4">{item.q}</span>
                                         <span className="ml-2 flex h-6 w-6 shrink-0 items-center justify-center rounded border border-[#D6D0C4] text-xs text-[#5C6066] transition-transform group-open:rotate-180 dark:border-[#2C313B] dark:text-[#A8A399]">
                                             <svg
@@ -1246,7 +1246,7 @@ export default function Welcome() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Hubungi Adit lewat WhatsApp"
-                    className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#20BA5A] focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 dark:bg-[#25D366] dark:hover:bg-[#20BA5A] dark:focus:ring-[#25D366] dark:focus:ring-offset-[#0F1115]"
+                    className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#20BA5A] active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 dark:bg-[#25D366] dark:hover:bg-[#20BA5A] dark:focus-visible:ring-[#25D366] dark:focus-visible:ring-offset-[#0F1115]"
                 >
                     <svg
                         className="h-6 w-6"
@@ -1289,7 +1289,7 @@ export default function Welcome() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Hubungi via WhatsApp (+62 812-5670-0457)"
-                                className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-md transition-all hover:scale-110 hover:bg-[#20BA5A] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
+                                className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-md transition-all hover:scale-110 hover:bg-[#20BA5A] hover:shadow-lg active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1115]"
                             >
                                 <svg
                                     className="h-6 w-6"
@@ -1306,7 +1306,7 @@ export default function Welcome() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Instagram @adit.code.id"
-                                className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-md transition-all hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#DD2A7B] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
+                                className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-md transition-all hover:scale-110 hover:shadow-lg active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#DD2A7B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1115]"
                             >
                                 <svg
                                     className="h-6 w-6"
@@ -1321,7 +1321,7 @@ export default function Welcome() {
                             <a
                                 href={EMAIL_URL}
                                 aria-label="Kirim Email ke adit.rwet@gmail.com"
-                                className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EA4335] text-white shadow-md transition-all hover:scale-110 hover:bg-[#D93025] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#EA4335] focus:ring-offset-2 focus:ring-offset-[#0F1115]"
+                                className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EA4335] text-white shadow-md transition-all hover:scale-110 hover:bg-[#D93025] hover:shadow-lg active:scale-[0.96] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA4335] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1115]"
                             >
                                 <svg
                                     className="h-6 w-6"
@@ -1350,7 +1350,7 @@ export default function Welcome() {
                             <span key={item.href} className="inline-flex items-center gap-4">
                                 <a
                                     href={item.href}
-                                    className="transition-colors hover:text-[#F5F2EB]"
+                                    className="transition-colors hover:text-[#F5F2EB] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] rounded px-1.5 py-0.5"
                                 >
                                     {item.label}
                                 </a>
