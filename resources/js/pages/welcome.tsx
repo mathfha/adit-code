@@ -1029,7 +1029,7 @@ export default function Welcome() {
                             </p>
                         </div>
 
-                        {/* Grid 5 Ketentuan Utama */}
+                        {/* Grid 6 Ketentuan Utama */}
                         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                             <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
                                 <div className="flex items-center gap-2.5">
@@ -1098,6 +1098,20 @@ export default function Welcome() {
                                 </div>
                                 <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
                                     Landing Page 3-5 hari kerja, Company Profile 1-2 minggu, Sistem Informasi 2-4 minggu, dihitung sejak materi lengkap.
+                                </p>
+                            </div>
+
+                            <div className="rounded-xl border border-[#E5E0D6] bg-white p-6 shadow-xs dark:border-[#262A32] dark:bg-[#171A20]">
+                                <div className="flex items-center gap-2.5">
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#EFF6FF] text-xs font-bold text-[#2563EB] dark:bg-[#132038] dark:text-[#60A5FA]">
+                                        6
+                                    </span>
+                                    <h3 className="text-base font-bold text-[#181B1F] dark:text-[#F5F2EB]">
+                                        Garansi &amp; Panduan
+                                    </h3>
+                                </div>
+                                <p className="mt-3 text-xs sm:text-sm text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
+                                    Garansi perbaikan jika ada kendala teknis setelah website selesai, plus panduan praktis cara mengelola website Anda.
                                 </p>
                             </div>
                         </div>
