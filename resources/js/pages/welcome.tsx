@@ -181,26 +181,8 @@ export default function Welcome() {
             </a>
 
             {/* HEADER */}
-            <header className="sticky top-0 z-40 w-full border-b border-[#E5E0D6] bg-[#F8F6F2]/95 backdrop-blur-sm dark:border-[#262A32] dark:bg-[#0F1115]/95">
-                <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                    {/* Brand Name & Logo */}
-                    <a
-                        href="#beranda"
-                        aria-label="Adit Code - Beranda"
-                        className="group flex items-center gap-2.5 text-base font-semibold tracking-tight text-[#181B1F] dark:text-[#F5F2EB]"
-                    >
-                        <img
-                            src="/images/logo-dark.png"
-                            alt="Logo Adit Code"
-                            className="h-8 w-auto object-contain dark:hidden"
-                        />
-                        <img
-                            src="/images/logo-light.png"
-                            alt="Logo Adit Code"
-                            className="hidden h-8 w-auto object-contain dark:block"
-                        />
-                    </a>
-
+            <header className="sticky top-0 z-40 w-full bg-[#F8F6F2]/95 backdrop-blur-sm dark:bg-[#0F1115]/95">
+                <div className="mx-auto flex h-16 max-w-6xl items-center justify-end md:justify-between px-4 sm:px-6 lg:px-8">
                     {/* Desktop Navigation */}
                     <nav
                         className="hidden md:flex items-center gap-6 text-sm text-[#5C6066] dark:text-[#A8A399]"
@@ -217,7 +199,7 @@ export default function Welcome() {
                         ))}
                     </nav>
 
-                    {/* Actions: Theme Toggle + WhatsApp CTA + Mobile Menu Button */}
+                    {/* Actions: Theme Toggle + Mobile Menu Button */}
                     <div className="flex items-center gap-3">
                         <button
                             type="button"
@@ -294,15 +276,6 @@ export default function Welcome() {
                                 )}
                             </span>
                         </button>
-
-                        <a
-                            href={WA_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hidden sm:inline-flex items-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
-                        >
-                            <span>Diskusikan via WhatsApp</span>
-                        </a>
 
                         {/* Mobile Menu Button */}
                         <button
