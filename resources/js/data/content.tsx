@@ -211,13 +211,6 @@ export const TERMS: TermItem[] = [
     },
 ];
 
-export const SYSTEM_INFO_NOTES: string[] = [
-    'Penyusunan dokumen ruang lingkup (Scope of Work / SOW) tertulis sebelum pengembangan.',
-    'Pembatasan jumlah role pengguna awal yang disepakati bersama.',
-    'Penyediaan mekanisme cadangan data (backup database) berkala untuk keamanan operasional.',
-    'Serah terima source code penuh beserta dokumentasi alur sistem kepada pemilik usaha.',
-];
-
 export interface FaqItem {
     q: string;
     a: React.ReactNode;

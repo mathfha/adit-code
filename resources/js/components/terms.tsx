@@ -1,5 +1,5 @@
 import React from 'react';
-import { SYSTEM_INFO_NOTES, TERMS } from '../data/content';
+import { TERMS } from '../data/content';
 
 export function Terms() {
     return (
@@ -41,35 +41,6 @@ export function Terms() {
                             </p>
                         </div>
                     ))}
-                </div>
-
-                {/* Catatan Khusus Sistem Informasi */}
-                <div className="mt-8 rounded-2xl border border-[#2563EB]/30 bg-[#EFF6FF]/60 p-6 dark:border-[#2563EB]/40 dark:bg-[#132038]/50">
-                    <h4 className="text-sm font-bold text-[#1D4ED8] dark:text-[#93C5FD] flex items-center gap-2">
-                        <svg
-                            className="h-4 w-4 shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                        </svg>
-                        Catatan Khusus Pengembangan Sistem Informasi &amp; Web App
-                    </h4>
-                    <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#1E3A8A] dark:text-[#BFDBFE]">
-                        {SYSTEM_INFO_NOTES.map((note, idx) => (
-                            <div key={idx} className="flex items-start gap-2">
-                                <span className="font-bold">•</span>
-                                <span>{note}</span>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </div>
         </section>
