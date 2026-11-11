@@ -402,17 +402,43 @@ export default function Welcome() {
                                 href={WA_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
+                                className="group inline-flex items-center justify-center gap-2.5 rounded-lg bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#F8F6F2] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8] dark:active:bg-[#1E40AF] dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
                             >
                                 <span>Diskusikan kebutuhan website</span>
-                                <span aria-hidden="true">&rarr;</span>
+                                <svg
+                                    className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth="2.2"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                    />
+                                </svg>
                             </a>
                             <a
                                 href="#layanan"
-                                className="inline-flex items-center gap-2 rounded-lg border border-[#D6D0C4] bg-white px-5 py-3 text-sm font-medium text-[#181B1F] transition-colors hover:bg-[#F2EFE8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:border-[#2C313B] dark:bg-[#171A20] dark:text-[#F5F2EB] dark:hover:bg-[#20242D]"
+                                className="group inline-flex items-center justify-center gap-2.5 rounded-lg border border-[#D6D0C4] bg-white/90 px-6 py-3 text-sm font-semibold text-[#181B1F] shadow-xs transition-all duration-200 hover:border-[#181B1F]/30 hover:bg-[#F2EFE8] hover:text-[#181B1F] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-[#F8F6F2] dark:border-[#2C313B] dark:bg-[#171A20]/90 dark:text-[#F5F2EB] dark:hover:border-[#4B5563] dark:hover:bg-[#20242D] dark:hover:text-white dark:focus:ring-[#60A5FA] dark:focus:ring-offset-[#0F1115]"
                             >
                                 <span>Lihat pilihan layanan</span>
-                                <span aria-hidden="true">&darr;</span>
+                                <svg
+                                    className="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5 text-[#5C6066] dark:text-[#A8A399]"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth="2.2"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"
+                                    />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -509,10 +535,23 @@ export default function Welcome() {
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Landing%20Page."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8]"
                                     >
                                         <span>Tanya Biaya via WhatsApp</span>
-                                        <span aria-hidden="true">&rarr;</span>
+                                        <svg
+                                            className="h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2.2"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                            />
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
@@ -588,10 +627,23 @@ export default function Welcome() {
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20paket%20Company%20Profile."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8]"
                                     >
                                         <span>Tanya Biaya via WhatsApp</span>
-                                        <span aria-hidden="true">&rarr;</span>
+                                        <svg
+                                            className="h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2.2"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                            />
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
@@ -667,10 +719,23 @@ export default function Welcome() {
                                         href="https://wa.me/6281256700457?text=Halo%20Adit,%20saya%20tertarik%20tanya%20biaya%20dan%20konsultasi%20pembuatan%20Sistem%20Informasi."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#3B82F6] dark:text-white dark:hover:bg-[#2563EB]"
+                                        className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#2563EB] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0 active:shadow-xs focus:outline-none focus:ring-2 focus:ring-[#2563EB] dark:bg-[#2563EB] dark:hover:bg-[#1D4ED8]"
                                     >
                                         <span>Tanya Biaya via WhatsApp</span>
-                                        <span aria-hidden="true">&rarr;</span>
+                                        <svg
+                                            className="h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2.2"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                            />
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
