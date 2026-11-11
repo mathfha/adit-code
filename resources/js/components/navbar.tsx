@@ -35,7 +35,7 @@ export function Navbar({ isDark, onToggleTheme }: NavbarProps) {
     };
 
     return (
-        <header className="sticky top-0 z-40 w-full bg-[#F8F6F2]/95 backdrop-blur-sm dark:bg-[#0F1115]/95">
+        <header className="sticky top-0 z-40 w-full border-b border-[#E5E0D6]/60 bg-[#F8F6F2]/95 backdrop-blur-sm transition-colors dark:border-[#262A32]/60 dark:bg-[#0F1115]/95">
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-end md:justify-between px-4 sm:px-6 lg:px-8">
                 {/* Desktop Navigation */}
                 <nav
