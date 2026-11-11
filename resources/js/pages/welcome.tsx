@@ -1355,9 +1355,13 @@ export default function Welcome() {
                         ))}
                     </nav>
 
-                    {/* Copyright */}
-                    <div className="mt-8 text-xs text-[#5C6066]">
-                        &copy; 2026 Adit Code. Hak cipta dilindungi.
+                    {/* Copyright & Craftsmanship (Best Practice: Dynamic Year + Craft Note) */}
+                    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2 text-xs text-[#7E8490]">
+                        <span>&copy; {new Date().getFullYear()} Adit Code. Hak cipta dilindungi.</span>
+                        <span className="hidden sm:inline text-[#3E4552]" aria-hidden="true">
+                            &middot;
+                        </span>
+                        <span>Dibuat dengan teliti di Indonesia</span>
                     </div>
                 </div>
             </footer>
