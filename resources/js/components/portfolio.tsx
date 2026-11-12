@@ -16,7 +16,7 @@ export function Portfolio() {
                         Hasil Kerja &amp; Proyek Pilihan
                     </h2>
                     <p className="mt-3 text-sm sm:text-base text-[#5C6066] dark:text-[#A8A399] leading-relaxed">
-                        Contoh tampilan website nyata yang dirancang fokus pada kemudahan pengunjung memahami produk dan langsung menghubungi kontak Anda.
+                        Contoh rancangan website untuk berbagai sektor usaha, mulai dari katalog produk, sistem reservasi, hingga showcase portofolio yang terstruktur rapi.
                     </p>
                 </div>
 
@@ -42,7 +42,8 @@ export function Portfolio() {
                                         <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#2563EB] dark:text-[#60A5FA]">
                                             {project.category}
                                         </span>
-                                        <span className="inline-flex items-center rounded-md border border-[#BFDBFE] bg-[#EFF6FF] px-2.5 py-0.5 text-xs font-medium text-[#1D4ED8] dark:border-[#1D4ED8]/50 dark:bg-[#132038] dark:text-[#93C5FD]">
+                                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[#E5E0D6] bg-[#FAF8F5] px-2.5 py-0.5 text-[11px] font-medium text-[#5C6066] dark:border-[#2A2E37] dark:bg-[#1A1D24] dark:text-[#A8A399]">
+                                            <span className="h-1.5 w-1.5 rounded-full bg-[#9CA3AF] dark:bg-[#6B7280]" aria-hidden="true" />
                                             {project.badge}
                                         </span>
                                     </div>

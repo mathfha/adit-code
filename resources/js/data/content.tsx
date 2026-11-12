@@ -129,7 +129,7 @@ export const PROJECTS: ProjectItem[] = [
         category: 'Website Company Profile',
         badge: 'Konsep Proyek',
         description:
-            'Website profil dan pemesanan paket wisata alam Banyuwangi yang menyajikan pilihan destinasi, rincian fasilitas open trip, galeri foto, dan alur pemesanan langsung via WhatsApp.',
+            'Website pemesanan paket wisata dan open trip Banyuwangi. Menampilkan pilihan destinasi, rincian fasilitas tur, galeri dokumentasi foto, dan formulir reservasi jadwal keberangkatan.',
         image:
             'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
         delay: '0',
@@ -139,7 +139,7 @@ export const PROJECTS: ProjectItem[] = [
         category: 'Website Profil & Katalog',
         badge: 'Konsep Proyek',
         description:
-            'Website satu halaman untuk studio sangrai kopi lokal yang menyajikan katalog biji kopi nusantara dengan profil rasa lengkap, lokasi sangrai dan jam operasional, serta alur pemesanan langsung ke nomor pengelola via WhatsApp.',
+            'Website profil sangrai kopi (micro-roastery) lokal. Dilengkapi katalog varietas biji nusantara beserta profil rasa (cupping notes), panduan seduh manual, serta integrasi peta lokasi kedai.',
         image:
             'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80',
         delay: '100',
@@ -149,7 +149,7 @@ export const PROJECTS: ProjectItem[] = [
         category: 'Website Layanan Kesehatan',
         badge: 'Konsep Proyek',
         description:
-            'Website profil informatif untuk penyedia jasa fisioterapi yang menyajikan kompetensi terapis, jenis cedera yang ditangani, jadwal konsultasi mingguan, dan alur reservasi pasien yang nyaman diakses dari ponsel.',
+            'Website layanan kesehatan dan klinik fisioterapi mandiri. Memuat profil sertifikasi terapis, panduan penanganan cedera medis, tarif transparan, serta sistem booking jadwal sesi pasien.',
         image:
             'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80',
         delay: '0',
@@ -159,7 +159,7 @@ export const PROJECTS: ProjectItem[] = [
         category: 'Website Portofolio Bisnis',
         badge: 'Konsep Proyek',
         description:
-            'Website portofolio untuk studio perencanaan arsitektur dan renovasi rumah yang menyajikan galeri foto proyek terbangun, estimasi alur kerja perancangan, dan tombol diskusi sketsa denah awal via WhatsApp.',
+            'Website portofolio studio arsitektur dan kontraktor interior. Menyajikan showcase foto proyek residensial, tahapan kerja perancangan, estimasi alur RAB, dan formulir konsultasi desain awal.',
         image:
             'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
         delay: '100',
